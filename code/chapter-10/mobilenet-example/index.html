@@ -1,0 +1,19 @@
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+
+
+<img id="img" src="https://upload.wikimedia.org/wikipedia/commons/6/64/The_Puppy.jpg" width = '512px' crossorigin="" />
+<p id="prediction_output">Loading predictions...</p>
+
+<script>
+ const image = document.getElementById("img");
+ const predictionOutput = document.getElementById("prediction_output");
+
+ // Load the model.   
+ mobilenet.load().then(model => {
+   // Classify the image.
+   model.classify(image).then(predictions => {
+     predictionOutput.innerText = "The top prediction is " + predictions[0].className ;
+   });
+ });
+</script>
