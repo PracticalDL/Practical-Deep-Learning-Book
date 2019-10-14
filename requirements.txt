@@ -17,7 +17,7 @@ Click==7.0
 command-not-found==0.3
 contextlib2==0.5.5
 coremltools==2.1.0
-cryptography==2.1.4
+cryptography==2.3
 cupshelpers==1.0
 cycler==0.10.0
 Cython==0.29.6
