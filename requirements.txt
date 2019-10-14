@@ -125,7 +125,7 @@ python-debian==0.1.32
 pytools==2017.6
 pytz==2018.9
 PyWavelets==1.0.3
-pyxdg==0.25
+pyxdg==0.26
 PyYAML==5.1
 pyzmq==16.0.2
 reportlab==3.4.0
