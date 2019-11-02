@@ -13,7 +13,7 @@ The following Jupyter Notebooks are provided. Please go through the code in the 
 
 ### Scripts
 
-[visualization.py](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/visualization.py) is a script that does most of the processing, and is being called by [2-what-does-my-neural-network-think.ipynb](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/2-what-does-my-neural-network-think.ipynb). The script produces the heatmap for one or more input images, overlays it on the image, and stitches it side-by-side with the original image for comparison. Please download the [`imagenet_class_index.json`](https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json) and update the path in the [`visualization.py`](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/visualization.py) file. The `imagenet_class_index.json` file provides a mapping from the ImageNet class ids to the string classnames. The script accepts arguments for image path or a directory that contains frames of a video (see below).
+[visualization.py](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/visualization.py) is a script that does most of the processing, and is being called by [2-what-does-my-neural-network-think.ipynb](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/2-what-does-my-neural-network-think.ipynb). The script produces the heatmap for one or more input images, overlays it on the image, and stitches it side-by-side with the original image for comparison. Please download the [`imagenet_class_index.json`](https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json) and update the path in the [`visualization.py`](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/visualization.py#L24) (line 24) file. The `imagenet_class_index.json` file provides a mapping from the ImageNet class ids to the string classnames. The script accepts arguments for image path or a directory that contains frames of a video (see below).
 
 ## Data
 
@@ -24,7 +24,7 @@ Don't forget to post your heatmap videos on Twitter with the hashtag [#Practical
 We have also provided the following sample inputs and the expected outputs.
 
 - Input video: [kitchen-input.mov](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/data/kitchen-input.mov)
-- Output video: [kitchen-output.mov](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/data/kitchen-output.mov)
+- Output video: [kitchen-output.mov](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-2/data/kitchen-output.mp4)
 - Input frames of video: [kitchen](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/data/kitchen)
 - Output frames of video: [kitchen-output](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/data/kitchen-output)
 - Output of sample cat image: [cat-output.jpg](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-2/data/cat-output.jpg)
