@@ -10,8 +10,8 @@ Read the chapter online [here.](https://learning.oreilly.com/library/view/practi
 
 Go through the code in the following order:
 
-1. [1-building-a -custom-classifier-in-keras-with-transfer-learning.ipynb](https://github.com/koul/Practical-Deep-Learning-Book/blob/master/code/chapter3/1-building-a-custom-classifier-in-keras-with-transfer-learning.ipynb): We will build a custom classifier in Keras in 30 lines!
-2. [2-analyzing-the-results.ipynb](https://github.com/koul/Practical-Deep-Learning-Book/blob/master/code/chapter3/2-analyzing-the-results.ipynb): With our trained model, we can analyze how it's performing over the validation dataset. Beyond the simpler accuracy metrics, looking at the actual images of mispredictions should give an intuition on whether the example was truly hard or if our model is not sophisticated enough.
+1. [1-building-a -custom-classifier-in-keras-with-transfer-learning.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-3/1-keras-custom-classifier-with-transfer-learning.ipynb): We will build a custom classifier in Keras in 30 lines!
+2. [2-analyzing-the-results.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-3/2-analyzing-the-results.ipynb): With our trained model, we can analyze how it's performing over the validation dataset. Beyond the simpler accuracy metrics, looking at the actual images of mispredictions should give an intuition on whether the example was truly hard or if our model is not sophisticated enough.
 
 ## Data
 
