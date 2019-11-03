@@ -1,0 +1,4 @@
+Model: mobilenet_v2_1.0_224_quant
+Input: input
+Output: output
+Top-1 Accuracy: 70.8%
