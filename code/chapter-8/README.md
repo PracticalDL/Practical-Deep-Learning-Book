@@ -4,20 +4,25 @@ Work smart, not hard. We utilize the power of cloud AI platforms from Google, Mi
 
 ## Code
 
-If you want to experiment with Clarifai and IBM Watson, please install them using:
+In this chapter, we will be going through two experiments of image tagging or object recognition, and optical character recognition (OCR). Image tagging helps us understand what objects are present inside an image. OCR helps decipher the characters present in an image. We will be uploading images from the MSCOCO dataset to various cloud providers and comparing the results.
+
+We will be using the Google, Microsoft, and Amazon cloud providers to test for image tagging and optical character recognition. Please sure you register and generate an API key for each and replace it in the [`script.py`](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/scripts/script.py).
+
+In addition, if you want to experiment with Clarifai and IBM Watson, please install their packages using:
 
 ```
 pip install clarifai
 pip install --upgrade watson-developer-cloud
 ```
+And, add their corresponding API keys to the `script.py`.
 
 ### Optical Character Recognition
 
 1. [1-get-MSCOCO-validation-image-ids-with-legible-text.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/optical-character-recognition/1-get-MSCOCO-validation-image-ids-with-legible-text.ipynb): We will develop a dataset of images from the MSCOCO dataset that contain at least a single instance of legible text and are in the validation split.
 
-2. [2-test-ocr-from-cloud-providers.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/optical-character-recognition/2-test-ocr-from-cloud-providers.ipynb):This code sample details how one image and a directory of images can be uploaded to various cloud providers using the [`script.py`](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/scripts/script.py). We will be using this script for both the OCR and image tagging experiments.
+2. [2-test-ocr-from-cloud-providers.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/optical-character-recognition/2-test-ocr-from-cloud-providers.ipynb):This code sample details how one image and a directory of images can be uploaded to various cloud providers using the [`script.py`](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/scripts/script.py). We will be using this script for both the OCR and image tagging experiments. This file is fairly generic and is intended to explain the usage of `script.py`.
 
-3. [3-upload-validation-images-to-cloud-providers.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/optical-character-recognition/3-upload-validation-images-to-cloud-providers.ipynb): In this file we will gather the data that enables us to do the benchmarking. We will be using the Google, Microsoft, and Amazon cloud providers so make sure you register and generate an API key for each and replace it in the [`script.py`](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/scripts/script.py).
+3. [3-upload-validation-images-to-cloud-providers.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/optical-character-recognition/3-upload-validation-images-to-cloud-providers.ipynb): In this file we will gather the data that enables us to do the benchmarking.
 
 4. [4-compile-ground-truth-ocr.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/optical-character-recognition/4-compile-ground-truth-ocr.ipynb): In this file we will compile the ground truth for all the test images.
 
@@ -40,7 +45,7 @@ Please download both the MSCOCO images, available on the [MSCOCO project website
 
 ### Optical Character Recognition
 
-We will be using the COCO-Text dataset for Optical Character Recognition. We will utilize its Python API for loading and parsing the annotations. More infromation on the COCO-Text dataset is available on its [website](http://vision.cornell.edu/se3/coco-text/). Please download the API. The various files that we will be utilizing from COCO-Text are:
+We will be using the COCO-Text dataset for Optical Character Recognition. We will utilize its Python API for loading and parsing the annotations. More information on the COCO-Text dataset is available on its [website](http://vision.cornell.edu/se3/coco-text/). Please download the API. The various files that we will be utilizing from COCO-Text are:
 
 1. `cocotext.v2.json`: Please download this file and update the path in the corresponding notebooks.
 2. `coco_evaluation.py`
