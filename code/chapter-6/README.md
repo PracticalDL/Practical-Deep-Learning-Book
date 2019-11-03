@@ -1,4 +1,4 @@
-# Code for Chapter 2: 
+# Code for Chapter 6: Maximizing Speed and Performance of TensorFlow: A Handy Checklist
 
 We take the speed of training and inference into hyperdrive by going through a checklist of 30 tricks to reduce as many inefficiencies as possible and maximize the value of your current hardware. [Read online here.](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch06.html)
 
@@ -18,4 +18,4 @@ To use this checklist effectively, do the following:
 
 Some of the improvements might be minute, some more drastic. But the cumulative effect of all these changes should hopefully result in faster, more efficient execution and best of all, more bang for the buck for your hardware.
 
-You can download the checklist in [Markdown](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-6/Performance-Checklist.md), and [PDF]().
+You can view the checklist in [Markdown](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-6/Performance-Checklist.md), or download in [PDF](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-6/Performance-Checklist.pdf) and keep it handy for future use.
