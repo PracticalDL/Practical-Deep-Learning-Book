@@ -238,7 +238,7 @@ Try Imagenette. Built by Jeremy Howard from fast.ai, this 1.4 GB dataset contain
 
 **Q: What are some of the readily available large video datasets I could use?**
 
-|   **Name **   | **Details**|
+|   **Name**   | **Details**|
 | ----------- | ----------- |
 |   YouTube-8M    |  <ul><li>6.1 million videos</li><li>3,862 classes</li><li>2.6 billion audio-visual features</li><li>3.0 labels/video</li><li>1.53 Terabytes of randomly sampled videos</li></ul>     |
 |  Something Something (from Twenty Billion Neurons)   |     <ul><li>221,000 videos in 174 action classes</li><li>For example, “Pouring water into wine glass but missing so it spills next to it”</li><li>Humans performing predefined actions with everyday objects</li></ul> |
