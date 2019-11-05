@@ -107,7 +107,6 @@ First off, welcome! We are happy that you have decided to use the book and the c
 
 - Code for each chapter is present in the [`code`](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code) folder.
 - There is a respective README in each chapter that provides chapter-specific instructions on how to proceed with the code, and what data to download.
-- We have also provided [sample images for experimentation](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/sample_images).
 
 ### Requirements
 Some chapters will require certian frameworks like TensorFlow, and Keras. Please see the [Installation](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/FAQ.md#installation) section in the [FAQ](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/FAQ.md) document.
