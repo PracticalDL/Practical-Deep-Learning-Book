@@ -23,7 +23,7 @@ A lot of the code in this chapter can be executed through Google Colab. See [her
 Go through the code in the following order:
 
 1. [1-develop-tool.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-5/1-develop-tool.ipynb): In this file, we will develop a tool to experiment with various parameter settings of a model. One can choose amongst different kinds of augmentation techniques, use different datasets available in TensorFlow Datasets, choose to train either from scratch or use finetune from MobileNet or any model of your choice, all in the browser without any framework installs on your system.
-1. [2-running-the-what-if-tool.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-5/2-running-the-what-if-tool.ipynb): Run the What-If tool on the trained model and dataset.
+1. [2-running-the-what-if-tool.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-5/2-running-the-what-if-tool.ipynb): Run the What-If tool on the trained model and dataset. A sample model and data is provided in the [`what-if-stuff`](https://github.com/PracticalDL/Practical-Deep-Learning-Book/tree/master/code/chapter-5/what-if-stuff) folder.
 1. [3-tf-explain.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-5/3-tf-explain.ipynb): tf-explain (by Raphael Meudec) helps understand the results and inner workings of a neural network with the help of visualizations, removing the veil on bias in our datasets. Few different visualization approaches are available with tf.explain. In this notebook we will produce different visualizations on the sample images.
 1. [4-keras-tuner.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-5/4-keras-tuner.ipynb): With so many potential combinations of hyperparameters to tune, coming up with the best model can be a tedious process. Often two or more parameters might have correlated effects on the overall speed of convergence as well as validation accuracy, so tuning one at a time might not lead to the best model. And if curiosity gets the best of us, we might want to experimentation on all the hyperparameters together! Keras Tuner comes to automate this hyperparameter search!
 1. [5-autokeras.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-5/5-autokeras.ipynb): AI can finally automate designing AI architectures too. Neural Architecture Search (NAS) approaches utilize reinforcement learning to join together mini architectural blocks, till they are able to maximize the objective function - i.e. our validation accuracy. The current state of the art networks are all based on NAS, leaving human-designed architectures in the dust. Research in this area started showing promising results in 2017, with a bigger focus on making train faster in 2018. AutoKeras (Haifeng Jin et al), also apply this state of the art technique on our particular datasets in a relatively accessible manner.
@@ -62,13 +62,25 @@ Then, this chapter is just for you! The following experiments should help you ma
 - Effect of Regularization - Batch Normalization
 - Effect of Activations - TanH vs Relu vs Sigmoid vs LeakyRelu vs ELU
 
+### Guide to Improving Neural Network Accuracy
+
+Using the above listed experiments, you will be able to develop your own guide to improving accuracy and speed. Such a guide will include:
+
+- Using ReLu as an activation function is significantly faster.
+- Batch Normalization layer is best placed after the linear activation layer, but if youre using dropout and RELU the order does not matter because the result will be the same.
+- Recommended dropout value are between 0.3 to 0.5. Too much and your network will under train. Too little and it might over train. 0.3 to 0.5 sets a good range to try out.
+
 ## Data
 
-In this chapter, we are trying to develop a single data input pipeline that can be used for training almost any model. The main advantage of pipelining is that we can choose any of the large number of available datasets and just plug and play. In this chapter, we will chiefly experiment with the datasets listed in below:
+In this chapter, we are trying to develop a single data input pipeline that can be used for training almost any model. The main advantage of pipelining is that we can choose any of the large number of available datasets and just plug and play.
+
+TensorFlow Datasets is a collection of ~100 ready to use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating data sets manually, and figuring out how to read their labels, TensorFlow Datasets standardizes the data format, so it’s easy to swap one dataset with another, often with just a single line of code change. In this chapter, we will chiefly experiment with the datasets listed below:
 
 | Dataset | Contents | Number of Categories  | Number of Images |
 |---|---| -----| -----|
 | Oxford Flowers 102 | Images of flowers commonly occurring in the United Kingdom | 102 | 8189 |
-| Colorectal Histology | Textures in colorectal cancer histology | 8 | 5000 |  
+| Colorectal Histology | Textures in colorectal cancer histology | 8 | 5000 |
+|Cats and Dogs| Images from [Asirra: A CAPTCHA that Exploits Interest-Aligned Manual Image Categorization](https://www.microsoft.com/en-us/research/publication/asirra-a-captcha-that-exploits-interest-aligned-manual-image-categorization/)  | 2 | 23262|
+| Caltech 101 | Pictures of objects belonging to 101 categories.  | 101 | 9801 |
 
 We chose these datasets because they’re relatively difficult to train on due to how similar different categories are. They force the model to learn finer-level details of the data in order to distinguish them. In comparison to these, a lot of other datasets are easier to train on. If the techniques we cover in this chapter will work on these datasets, they should work on a lot of other datasets as well.
