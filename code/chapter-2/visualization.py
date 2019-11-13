@@ -1,19 +1,16 @@
 import numpy as np
-import keras
-from keras import activations
-from keras.preprocessing import image
-from keras.utils.data_utils import get_file
+import tensorflow
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.utils import get_file
 import json
 
-from keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
+from tf_explain.core.grad_cam import GradCAM
 
 import PIL
 from PIL import Image, ImageDraw, ImageFont
 
 import matplotlib.cm as cm
-
-from vis.utils import utils
-from vis.visualization import visualize_cam, overlay
 
 from argparse import ArgumentParser
 
@@ -26,7 +23,6 @@ CLASS_INDEX_PATH = '../imagenet_class_index.json'
 # Note: decode_predictions(preds, top) is originally a keras function.
 # We have modified it here so that it returns the index of the class label along with the predictions.
 # The results are assimilated based on the assumption that there is only one top 1% prediction.
-
 
 def decode_predictions_modified(preds, top=1):
     global CLASS_INDEX
@@ -46,14 +42,12 @@ def decode_predictions_modified(preds, top=1):
 
 # Function that takes an image and model and produces the predictions
 
-
 def get_predictions(img, model):
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x = preprocess_input(x)
     preds = model.predict(x)
     return decode_predictions_modified(preds, top=1)
-
 
 # NOTE: These two functions are taken from Shao-Chuan Wang <shaochuan.wang AT gmail.com> 
 # as per the copyright on http://code.activestate.com/recipes/577591-conversion-of-pil-image-and-numpy-array/
@@ -89,7 +83,6 @@ def array_to_PIL(arr):
         arr = np.c_[arr, 255*np.ones((len(arr), 1), np.uint8)]
     return Image.frombuffer(mode, size, arr.tostring(), 'raw', mode, 0, 1)
 
-
 # Function that puts text based prediction and class name on top of the image
 def overlay_prediction_on_image(img, prediction_class, prediction_probability, width, height):
     img = img.resize((width, height), Image.ANTIALIAS)
@@ -102,14 +95,6 @@ def overlay_prediction_on_image(img, prediction_class, prediction_probability, w
     draw.text((int(width*0.06), int(width*0.06)), '{0:.0f}'.format(
         prediction_probability) + "% " + prediction_class, fill=(255, 255, 255))
     return img
-
-
-def get_heatmap(img, class_index, modifier, model):
-    # class_index is the ImageNet index for the class label that had the highest prediction for this image
-    grads = visualize_cam(model, -1, filter_indices=class_index,
-                          seed_input=img, backprop_modifier=modifier)
-    heatmap = np.uint8(cm.jet(grads)[..., :3] * 255)
-    return heatmap
 
 # Based on StackOverflow code by user DTing
 # https://stackoverflow.com/questions/30227466/combine-several-images-horizontally-with-python
@@ -128,20 +113,12 @@ def join_images(img1, img2):
 
 
 def process_image(image_path, output_path):
-    # Load the vgg19 model
-    model = keras.applications.vgg19.VGG19(
-        include_top=True, weights='imagenet', input_tensor=None, input_shape=None, pooling=None, classes=1000)
+    model = VGG16(weights='imagenet', include_top=True, input_tensor=None, input_shape=None, pooling=None, classes=1000)
+    explainer = GradCAM()
 
-    # Grad-CAM paper: https://arxiv.org/pdf/1610.02391.pdf
-    # Reusing code from https://github.com/raghakot/keras-vis/blob/master/examples/vggnet/attention.ipynb
-    # Modify the last layer of the model for grad cam because we don't need the probability values for visualizations
-    layer_idx = utils.find_layer_idx(model, 'predictions')
-
-    # Swap softmax with linear
-    model.layers[layer_idx].activation = activations.linear
-    model = utils.apply_modifications(model)
-
-    img = utils.load_img(image_path, target_size=(224, 224))
+    img = image.load_img(image_path, target_size=(224, 224))
+    img = image.img_to_array(img)
+    data = ([img], None)
 
     original_image = Image.open(image_path)
     width = int(original_image.size[0]/4)
@@ -149,20 +126,16 @@ def process_image(image_path, output_path):
     original_image.thumbnail((width, height), Image.ANTIALIAS)
 
     class_index, class_name, prob_value = get_predictions(img, model)
-    heatmap = get_heatmap(img, class_index, "guided", model)
-
-    # place the heatmap on the image so that we can see which part of the image has the max activation
-    heatmap_overlayed = overlay(heatmap, img)  # numpy.ndarray object type
+    heatmap = explainer.explain(data, model, "block5_conv3", class_index)
 
     # overlay the text prediction on the heatmap overlay
     heatmap_with_prediction_overlayed = overlay_prediction_on_image(
-        array_to_PIL(heatmap_overlayed), class_name[-1], prob_value[0], width, height)
+        array_to_PIL(heatmap), class_name[-1], prob_value[0] * 100, width, height)
 
     # place the images side by side
     joined_image = join_images(
         original_image, heatmap_with_prediction_overlayed)
     joined_image.save(output_path)
-
 
 def process_video(videoframes_path, output_prefix):
     counter = 0
