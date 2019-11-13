@@ -4,6 +4,16 @@ We delve into the world of image classification in a mere five lines of Keras co
 
 We also hear the motivating personal journey of **François Chollet**, the creator of Keras, illustrating the impact a single individual can have.
 
+## Setup
+
+Run the following commands prior to running the scripts in this directory:
+
+`$ pip install tensorflow -U`
+`$ pip install keras -U`
+`$ pip install numpy -U`
+`$ pip install matplotlib -U`
+
+
 ## Code
 
 The following Jupyter Notebooks are provided. Please go through the code in the given order:
