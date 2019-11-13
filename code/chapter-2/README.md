@@ -9,8 +9,11 @@ We also hear the motivating personal journey of **François Chollet**, the creat
 Run the following commands prior to running the scripts in this directory:
 
 `$ pip install tensorflow -U`
+
 `$ pip install keras -U`
+
 `$ pip install numpy -U`
+
 `$ pip install matplotlib -U`
 
 
