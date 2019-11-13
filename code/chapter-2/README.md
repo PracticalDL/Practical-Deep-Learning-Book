@@ -16,6 +16,11 @@ Run the following commands prior to running the scripts in this directory:
 
 `$ pip install matplotlib -U`
 
+`$ pip install tf-explain -U`
+
+`$ pip install pillow -U`
+
+`$ pip install pathlib -U`
 
 ## Code
 
