@@ -12,7 +12,6 @@ Table of contents
 * [Book Description](#book-description)
 * [Chapter List](#chapter-list)
 * [How to Use this repository](#how-to-use-this-repository)
-   * [Requirements](#requirements)
    * [Environment](#environment)
    * [Bug Reporting](#bug-reporting)
 * [About the Authors](#about-the-authors)
@@ -109,9 +108,6 @@ First off, welcome! We are happy that you have decided to use the book and the c
 - There is a respective README in each chapter that provides chapter-specific instructions on how to proceed with the code, and what data to download.
 
 Please follow [these](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb#scrollTo=WzIRIt9d2huC) instructions to load the GitHub repo on Google Colab. Keep in mind that you will need access to your own Google Drive as we will be using data from a local system.
-
-### Requirements
-Some chapters will require certian frameworks like TensorFlow, and Keras. Please see the [Installation](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/FAQ.md#installation) section in the [FAQ](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/FAQ.md) document.
 
 ### Environment
 We will use a `virtualenv` by the name of `practicaldl` throughout the book. The `requirements.txt` for this `virtualenv` are in the root directory. Help and instructions to install `virtualenv` are in the [Installation](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/FAQ.md#installation) section in the [FAQ](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/FAQ.md) document.

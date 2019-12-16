@@ -2,6 +2,12 @@
 
 Like Google Reverse Image Search, we explore how one can use embeddings — a contextual representation of an image to find similar images in under ten lines. And then the fun starts when we explore different strategies and algorithms to speed this up at scale, from thousands to several million images, and making them searchable in microseconds.
 
+## Setup
+
+Run the following command prior to running the scripts in this directory:
+
+`$ pip install annoy -U`
+
 ## Code
 
 Go through the code in the following order:
