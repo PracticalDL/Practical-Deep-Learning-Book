@@ -14,9 +14,9 @@ This document is a set of quick questions and generally useful FAQs.
   
 4. Active the virtual environment `source practicaldl/bin/activate`
 
-5. Install all the requirements `pip install -r requirements.txt`
+5. When we want to exit, use the deactivate command `deactivate`
 
-6. When we want to exit, use the deactivate command `deactivate`
+6. Use pip to install the necessary packages (listed in each chapter's README.md) in the virtual environment only.
 
 Within the `virtualenv` environment, please install the following:
 
