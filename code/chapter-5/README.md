@@ -42,25 +42,37 @@ If you find yourself asking questions like:
 - How similar does my dataset have to be to ImageNet to get successful results from transfer learning? If it’s too dissimilar, what are my options?
 - How do I prevent my model from overtraining and memorizing the input data?
 
-Then, this chapter is just for you! The following experiments should help you make a choice:
+Then, this chapter is just for you! The following experiments (sneak peek of graphs provided) should help you make a choice:
 
 - Transfer Learning vs Training from Scratch
+![](./experiments/transfer-learning-vs-training-from-scratch.png)
+![](./experiments/transfer-learning-vs-training-from-scratch-colorectal.png)
 - Effect of Number of Layers Fine-Tuned in Transfer Learning
-- Effect of Choice of CNN Architecture on Transfer Learning
-- Effect of number of layers in Custom Architectures
+![](./experiments/effect-of-number-of-layers-fine-tuned.png)
+- Effect of Data Size on Transfer Learning
+![](./experiments/effect-of-number-of-images-on-transfer-learning.png)
+- Effect of Learning Rate
+![](./experiments/effect-of-learning-rate.png)
+- Effect of optimizers
+![](./experiments/effect-of-optimizers.png)
+- Effect of batch size
+![](./experiments/effect-of-batch-size.png)
+- Effect of Resizing
+![](./experiments/effect-of-image-size.png)
+- Effect of change in Aspect Ratio on Transfer Learning
+![](./experiments/aspect-ratio-number-of-images.png)
+![](./experiments/aspect-ratio-vs-accuracy.png)
+- Effect of choice of CNN architecture on Transfer Learning
+- Effect of number of layers in custom architectures
 - Effect of number of filters in Custom Architectures
 - Effect of initialization of filters in Custom Architectures
-- Effect of Data Size on Transfer Learning
-- Effect of Learning Rate
-- Effect of optimizers
-- Effect of batch size
-- Effect of Resizing
-- Effect of change in Aspect Ratio on Transfer Learning
 - Effect of Image Resize Interpolation
 - Effect of Augmentation
 - Effect of Regularization - Dropout
 - Effect of Regularization - Batch Normalization
 - Effect of Activations - TanH vs Relu vs Sigmoid vs LeakyRelu vs ELU
+
+Please refer to the [chapter](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch05.html) for the parameters, including the experimental setup with architecture and datasets associated with each graph.
 
 ### Guide to Improving Neural Network Accuracy
 
