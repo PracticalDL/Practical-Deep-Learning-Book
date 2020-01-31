@@ -20,6 +20,8 @@ import os
 CLASS_INDEX = None
 CLASS_INDEX_PATH = '../imagenet_class_index.json'
 
+model = VGG16(weights='imagenet', include_top=True, input_tensor=None, input_shape=None, pooling=None, classes=1000)
+
 # Note: decode_predictions(preds, top) is originally a keras function.
 # We have modified it here so that it returns the index of the class label along with the predictions.
 # The results are assimilated based on the assumption that there is only one top 1% prediction.
@@ -113,7 +115,6 @@ def join_images(img1, img2):
 
 
 def process_image(image_path, output_path):
-    model = VGG16(weights='imagenet', include_top=True, input_tensor=None, input_shape=None, pooling=None, classes=1000)
     explainer = GradCAM()
 
     img = image.load_img(image_path, target_size=(224, 224))
