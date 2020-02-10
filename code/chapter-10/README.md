@@ -11,7 +11,7 @@ Go through the code in the following order:
 3. [Running Pretrained Model using ml5.js](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-10/ml5js): ml5.js is a higher abstraction of TensorFlow.js that makes it easy to use existing pre-trained deep learning models in a unified way, with a minimal number of lines of code. The package comes with a wide range of built-in models, ranging from image segmentation to sound classification to text generation, some of which we will use in this example.
 4. [Running on a livestream from a webcam using p5js](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-10/p5js-webcam): p5.js is a library that works nicely in conjunction with ml5.js and makes it super easy to make model predictions in real-time using a live video stream.
 5. [PoseNet](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-10/posenet): We explore the computer vision task of pose estimation.
-6. [Pix2Pix](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-10/posenet): We dive in sci-fi and examine image translation.
+6. [Pix2Pix](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-10/Pix2Pix): We dive in sci-fi and examine image translation.
 
 ### Scripts
 
