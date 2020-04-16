@@ -1,4 +1,4 @@
-# Practical Deep Learning for Cloud, Mobile, and Edge
+ # Practical Deep Learning for Cloud, Mobile, and Edge
 
 | This is the official code repository for the O'Reilly Publication,<br> [**Practical Deep Learning for Cloud, Mobile, and Edge**](https://www.oreilly.com/library/view/practical-deep-learning/9781492034858/) <br> by [Anirudh Koul](https://twitter.com/AnirudhKoul), [Siddha Ganju](https://twitter.com/siddhaganju) and [Meher Kasam](https://twitter.com/MeherKasam).  | <a href="https://www.oreilly.com/library/view/practical-deep-learning/9781492034858/"><img src="https://github.com/sidgan/sidgan.github.com/raw/master/files/book-cover.PNG" width="360"> |
 |---|---|
