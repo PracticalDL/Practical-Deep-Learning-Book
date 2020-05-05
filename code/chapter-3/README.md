@@ -16,3 +16,22 @@ Go through the code in the following order:
 ## Data
 
 Download the `Cats and Dogs` dataset from [Kaggle](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/download/train.zip) and place it in the `data` directory. You may have to create an account on Kaggle in order to download the data.
+
+## Further Reading
+
+If you've reached this far, we admire your persistence. You should treat yourself to some ice cream!
+
+Even if you are a first-time learner of deep learning or a hobbiyst, you can develop foundational knowledge through these resources that allow one to play with different training scenarios in the browser without the need to install any packages! It covers not only the theory but also helps to build the intuition to solve future problems. 
+
+Take a look at the table below outlining some video series, online books and broswer based tools which are sure to advance your learnings!
+
+| Name | What is it?  | YouTube/Blog  | 
+|---|---|---|
+| [Teachable Machine](https://end-to-end-machine-learning.teachable.com/p/how-deep-neural-networks-work) by [Brandon Rohrer](https://www.linkedin.com/in/brohrer/) | Series of lectures describing how CNNs, RNNs and LSTMs work.  | You can either register free-of-cost on the website, or view on [YouTube](https://www.youtube.com/watch?v=ILsA4nyG7I0&list=PLVZqlMpoM6kaJX_2lLKjEhWI0NlqHfqzp)  | 
+| [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by [Michael Nielsen](http://michaelnielsen.org/)  | A free online book on Neural networks that is grounded in principles of deep learning.  |   |
+| [TensorFlow Playground](https://playground.tensorflow.org/) by Google's Daniel Smilkov and Shan Carter  | An interactive browser-based tool that allows one to tinker with a neural network in the browser.  | [Blog](https://cloud.google.com/blog/products/gcp/understanding-neural-networks-with-tensorflow-playground)  |
+| [ConvNet PlayGround](https://convnetplayground.fastforwardlabs.com/#/) By Cloudera's Fast Forward Labs  |  An interactive browser-based tool that does semantic image search using convolutional neural networks | [Blog](https://towardsdatascience.com/convnetplayground-979d441ebf82)  |
+| [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) by Andrej Karpathy  | A Javascript library for training models in the browser. "Open a tab and you're training. No software requirements, no compilers, no installations, no GPUs, no sweat."  | [Introduction](https://cs.stanford.edu/people/karpathy/convnetjs/started.html)  |
+| [CNN Explainer](https://poloclub.github.io/cnn-explainer/)  |  Visualize each convolution and filter as they pass through each image. | [YouTube](https://www.youtube.com/watch?v=HnWIHWFbuUQ&feature=youtu.be)  |
+
+PS: If you have another good resource in mind, be sure to pay it forward by adding it to the table above.
