@@ -34,4 +34,4 @@ Take a look at the table below outlining some video series, online books and bro
 | [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) by Andrej Karpathy  | A Javascript library for training models in the browser. "Open a tab and you're training. No software requirements, no compilers, no installations, no GPUs, no sweat."  | [Introduction](https://cs.stanford.edu/people/karpathy/convnetjs/started.html)  |
 | [CNN Explainer](https://poloclub.github.io/cnn-explainer/)  |  Visualize each convolution and filter as they pass through each image. | [YouTube](https://www.youtube.com/watch?v=HnWIHWFbuUQ&feature=youtu.be)  |
 
-PS: If you have another good resource in mind, be sure to pay it forward by adding it to the table above.
+PS: If you have another good resource in mind, be sure to add it to the table above.
