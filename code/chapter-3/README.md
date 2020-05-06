@@ -19,11 +19,9 @@ Download the `Cats and Dogs` dataset from [Kaggle](https://www.kaggle.com/c/dogs
 
 ## Further Reading
 
-If you've reached this far, we admire your persistence. You should treat yourself to some ice cream!
-
 Even if you are a first-time learner of deep learning or a hobbiyst, you can develop foundational knowledge through these resources that allow one to play with different training scenarios in the browser without the need to install any packages! It covers not only the theory but also helps to build the intuition to solve future problems. 
 
-Take a look at the table below outlining some video series, online books and broswer based tools which are sure to advance your learnings!
+Take a look at the table below outlining a few video series, online books, and browser-based tools that will help further your understanding of the subject matter. 
 
 | Name | What is it?  | YouTube/Blog  | 
 |---|---|---|
@@ -33,5 +31,3 @@ Take a look at the table below outlining some video series, online books and bro
 | [ConvNet PlayGround](https://convnetplayground.fastforwardlabs.com/#/) By Cloudera's Fast Forward Labs  |  An interactive browser-based tool that does semantic image search using convolutional neural networks | [Blog](https://towardsdatascience.com/convnetplayground-979d441ebf82)  |
 | [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) by Andrej Karpathy  | A Javascript library for training models in the browser. "Open a tab and you're training. No software requirements, no compilers, no installations, no GPUs, no sweat."  | [Introduction](https://cs.stanford.edu/people/karpathy/convnetjs/started.html)  |
 | [CNN Explainer](https://poloclub.github.io/cnn-explainer/)  |  Visualize each convolution and filter as they pass through each image. | [YouTube](https://www.youtube.com/watch?v=HnWIHWFbuUQ&feature=youtu.be)  |
-
-PS: If you have another good resource in mind, be sure to add it to the table above.
