@@ -1,4 +1,4 @@
-# Code for Chapter 15 — Becoming a Maker: Exploring Embedded AI at the Edge
+# Code for Chapter 15: Becoming a Maker: Exploring Embedded AI at the Edge
 
 Guest author Sam Sterckval brings deep learning to low-power devices as he showcases a range of AI-capable edge devices with varying processing power and cost including Raspberry Pi, NVIDIA Jetson Nano, Google Coral, Intel Movidius, PYNQ-Z2 FPGA, opening the doors for robotics and maker projects.
 
