@@ -4,4 +4,4 @@ Moving from the virtual to the physical world, guest author **Sunil Mallya** sho
 
 ## Code
 
-Please refer to the [GitHub repository](https://github.com/aws-samples/aws-deepracer-workshops) of AWS.
+Please refer to the [GitHub repository](https://github.com/aws-samples/aws-deepracer-workshops) of AWS DeepRacer.
