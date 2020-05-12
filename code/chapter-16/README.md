@@ -4,4 +4,4 @@ Using the photorealistic simulation environment of Microsoft AirSim, guest autho
 
 ## Code
 
-Head over to [Microsoft's AirSim](https://github.com/microsoft/AirSim) repository where you can train a self-driving car in a simulated environment.
+Head over to [Microsoft's AutonomousDrivingCookbook](https://github.com/microsoft/AutonomousDrivingCookbook) repository where you can train a self-driving car in a simulated environment.
