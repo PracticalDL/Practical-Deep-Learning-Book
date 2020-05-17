@@ -5,6 +5,8 @@
   
 [[Online on Safari](https://www.oreilly.com/library/view/practical-deep-learning/9781492034858/)] | [[Buy on Amazon](https://www.amazon.com/Practical-Learning-Cloud-Mobile-Hands/dp/149203486X/)] | [[Online on Google Books](https://books.google.com/books?id=B_3ovwEACAAJ)] | [[Book Website](http://practicaldeeplearning.ai/)] | [[Presentation on Slideshare](https://www.slideshare.net/anirudhkoul/deep-learning-on-mobile-2019-practitioners-guide)]
 
+**Featured as a learning resource on the official [Keras](https://keras.io/getting_started/learning_resources/) website**
+
 Table of contents
 =================
 
