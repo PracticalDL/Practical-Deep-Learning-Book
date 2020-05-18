@@ -10,3 +10,8 @@ Go through the code in the following order:
 2. [benchmark_tflite.py](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-15/benchmark_tflite.py): This script will make a prediction on the [cat.jpg](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-15/images/cat.jpg) file 250 times using a TensorFlow Lite model and measure how long it takes to run.
 3. [benchmark_edgetpu.py](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-15/benchmark_edgetpu.py): This script can make a prediction on the [cat.jpg](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-15/images/cat.jpg) file 250 times on a Raspberry Pi and measure how long it takes to run.
 4. [benchmark_jetson.py](https://github.com/practicaldl/Practical-Deep-Learning-Book/blob/master/code/chapter-15/benchmark_jetson.py): This script can make a prediction on the [cat.jpg](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-15/images/cat.jpg) file 250 times on a Jetson Nano and measure how long it takes to run.
+<<<<<<< Updated upstream
+=======
+
+Please note that all the examples on edge devices showcased above work only on `TensorFlow 1.x` as of now.
+>>>>>>> Stashed changes
