@@ -4,60 +4,50 @@ Work smart, not hard. We utilize the power of cloud AI platforms from Google, Mi
 
 ## Summary of Results
 
-Detailed experimental methodology in Chapter 8, read [here.](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch08.html).
+Below, we present the graphical summaries of experiments conducted in chapter 8. For detailed experimental methodology for each experiment, refer to the text in Chapter 8 [visible here.](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch08.html). To reproduce the benchmarks please refer to the [instructions](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/README.md#code).
 
 **Comparing F1 score for custom classifier services, as of August 2019 (higher is better)**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/19-f1-score-custom.png)
+![F1 Scores for Custom Classifier](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/19-f1-score-custom.png)
 
 **Word Error Rate for different text extraction APIs, as of August 2019**
 You can run this benchmark following the [instructions](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/README.md#code).
 
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/8-text-accuracy-comparison.png)
+![Text Accuracy Comparison](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/8-text-accuracy-comparison.png)
 
 **Cost comparison of different cloud-based vision APIs**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/7-cost-comparison.png)
+![Cost Comparison](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/7-cost-comparison.png)
 
 **Effect of resizing an image on agreement rate and file size reduction relative to the original image**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/21-google-resizing-experiment.png)
+![Resizing Experiment](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/21-google-resizing-experiment.png)
 
 **Effect of varying size of training data per class on test F1 score (higher is better)**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/20-varying-training-size.png)
+![Training Size](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/20-varying-training-size.png)
 
 **Effect of compressing an image on agreement rate and file size reduction relative to the original image**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/22-google-compression-experiment.png)
+![Compression Experiment](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/22-google-compression-experiment.png)
 
 **Comparison shopping of vision API providers (as of Aug 2019)**
 
 Examining services offered by each cloud provider.
-
-|   | Algorithmia  | Amazon Rekognition  | Clarifai  | Microsoft Cognitive Services  | Google Cloud Vision  | IBM Watson Visual Recognition  |
+|  | Algorithmia | Amazon Rekognition | Clarifai | Microsoft Cognitive Services | Google Cloud Vision | IBM Watson Visual Recognition |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Image classification | :white_check_mark:  |  :white_check_mark: |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
-| Image detection | :white_check_mark:  |  :white_check_mark: |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
-| OCR | :white_check_mark:  |  :white_check_mark: |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Face recognition | :white_check_mark:  |  :white_check_mark: |  ❌ |  :white_check_mark: | ❌  | ❌  |
-| Emotion recognition | :white_check_mark:  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Logo recognition | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Landmark recognition | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
-| Celebrity recognition | :white_check_mark:  |  :white_check_mark: |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
-| Multi-lingual tagging | ❌  |  ❌ |  :white_check_mark: |  ❌ | ❌  | ❌  |
-| Image description | ❌  |  ❌ |  ❌ |  :white_check_mark: | ❌  | ❌  |
-| Handwriting | ❌  |  ❌ |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Thumbnail generation | :white_check_mark:  |  ❌ |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Content - moderation | :white_check_mark:  |  :white_check_mark: |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Custom classification training | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
-| Custom detector training | ❌  |  ❌ |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Mobile custom models | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
-| Free tier | 5,000 requests per month  |  5,000 requests per month | 5,000 requests per month  |  5,000 requests per month | 1,000 requests per month  | 7,500  |
-
-
-
-
-
-
-
-
-
+| Image classification | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Image detection | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ❌ |
+| OCR | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ❌ |
+| Face recognition | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ |
+| Emotion recognition | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | ❌ |
+| Logo recognition | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ❌ |
+| Landmark recognition | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Celebrity recognition | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Multi-lingual tagging | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ |
+| Image description | ❌ | ❌ | ❌ | ✔️ | ❌ | ❌ |
+| Handwriting | ❌ | ❌ | ❌ | ✔️ | ✔️ | ❌ |
+| Thumbnail generation | ✔️ | ❌ | ❌ | ✔️ | ✔️ | ❌ |
+| Content - moderation | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
+| Custom classification training | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Custom detector training | ❌ | ❌ | ❌ | ✔️ | ✔️ | ❌ |
+| Mobile custom models | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ❌ |
+| Free tier | 5,000 requests per month | 5,000 requests per month | 5,000 requests per month | 5,000 requests per month | 1,000 requests per month | 7,500 |
 
 ## Code
 
