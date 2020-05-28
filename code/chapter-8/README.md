@@ -6,49 +6,58 @@ Work smart, not hard. We utilize the power of cloud AI platforms from Google, Mi
 
 Detailed experimental methodology in Chapter 8, read [here.](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch08.html).
 
-**Comparision shopping of vision API providers (as of Aug 2019)**
-
-Examining services offered by each cloud provider. 
-
-|   | Algorithmia  | Amazon Rekognition  | Clarifai  | Microsoft Cognitive Services  | Google Cloud Vision  | IBM Watson Visual Recognition  |
-|---|---|---|---|---|---|---|
-| Image classification | [x]  |  [x] |  [x] |  [x] | [x]  | [x]  |
-| Image detection | [x]  |  [x] |  [ ] |  [x] | [x]  | [ ]  |
-| OCR | [x]  |  [x] |  [ ] |  [x] | [x]  | [ ]  |
-| Face recognition | [x]  |  [x] |  [ ] |  [x] | [ ]  | [ ]  |
-| Emotion recognition | [x]  |  [ ] |  [x] |  [x] | [x]  | [ ]  |
-| Logo recognition | [ ]  |  [ ] |  [x] |  [x] | [x]  | [ ]  |
-| Landmark recognition | [ ]  |  [ ] |  [x] |  [x] | [x]  | [x]  |
-| Celebrity recognition | [x]  |  [x] |  [x] |  [x] | [x]  | [x]  |
-| Multi-lingual tagging | [ ]  |  [ ] |  [x] |  [ ] | [ ]  | [ ]  |
-| Image description | [ ]  |  [ ] |  [ ] |  [x] | [ ]  | [ ]  |
-| Handwriting | [ ]  |  [ ] |  [ ] |  [x] | [x]  | [ ]  |
-| Thumbnail generation | [x]  |  [ ] |  [ ] |  [x] | [x]  | [ ]  |
-| Content - moderation | [x]  |  [x] |  [x] |  [x] | [x]  | [ ]  |
-| Custom classification training | [ ]  |  [ ] |  [x] |  [x] | [x]  | [x]  |
-| Custom detector training | [ ]  |  [ ] |  [ ] |  [x] | [x]  | [ ]  |
-| Mobile custom models | [ ]  |  [ ] |  [x] |  [x] | [x]  | [ ]  |
-| Free tier | 5,000 requests per month  |  5,000 requests per month | 5,000 requests per month  |  5,000 requests per month | 1,000 requests per month  | 7,500  |
-
-**Cost comparison of different cloud-based vision APIs**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/7-cost-comparison.png)
+**Comparing F1 score for custom classifier services, as of August 2019 (higher is better)**
+![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/19-f1-score-custom.png)
 
 **Word Error Rate for different text extraction APIs, as of August 2019**
 You can run this benchmark following the [instructions](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/README.md#code).
 
 ![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/8-text-accuracy-comparison.png)
 
-**Comparing F1 score for custom classifier services, as of August 2019 (higher is better)**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/19-f1-score-custom.png)
-
-**Effect of varying size of training data per class on test F1 score (higher is better)**
-![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/20-varying-training-size.png)
+**Cost comparison of different cloud-based vision APIs**
+![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/7-cost-comparison.png)
 
 **Effect of resizing an image on agreement rate and file size reduction relative to the original image**
 ![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/21-google-resizing-experiment.png)
 
+**Effect of varying size of training data per class on test F1 score (higher is better)**
+![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/20-varying-training-size.png)
+
 **Effect of compressing an image on agreement rate and file size reduction relative to the original image**
 ![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/22-google-compression-experiment.png)
+
+**Comparision shopping of vision API providers (as of Aug 2019)**
+
+Examining services offered by each cloud provider.
+
+|   | Algorithmia  | Amazon Rekognition  | Clarifai  | Microsoft Cognitive Services  | Google Cloud Vision  | IBM Watson Visual Recognition  |
+|---|---|---|---|---|---|---|
+| Image classification | :white_check_mark:  |  :white_check_mark: |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
+| Image detection | :white_check_mark:  |  :white_check_mark: |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
+| OCR | :white_check_mark:  |  :white_check_mark: |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Face recognition | :white_check_mark:  |  :white_check_mark: |  ❌ |  :white_check_mark: | ❌  | ❌  |
+| Emotion recognition | :white_check_mark:  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Logo recognition | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Landmark recognition | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
+| Celebrity recognition | :white_check_mark:  |  :white_check_mark: |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
+| Multi-lingual tagging | ❌  |  ❌ |  :white_check_mark: |  ❌ | ❌  | ❌  |
+| Image description | ❌  |  ❌ |  ❌ |  :white_check_mark: | ❌  | ❌  |
+| Handwriting | ❌  |  ❌ |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Thumbnail generation | :white_check_mark:  |  ❌ |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Content - moderation | :white_check_mark:  |  :white_check_mark: |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Custom classification training | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | :white_check_mark:  |
+| Custom detector training | ❌  |  ❌ |  ❌ |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Mobile custom models | ❌  |  ❌ |  :white_check_mark: |  :white_check_mark: | :white_check_mark:  | ❌  |
+| Free tier | 5,000 requests per month  |  5,000 requests per month | 5,000 requests per month  |  5,000 requests per month | 1,000 requests per month  | 7,500  |
+
+
+
+
+
+
+
+
+
 
 ## Code
 
