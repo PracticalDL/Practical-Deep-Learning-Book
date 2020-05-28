@@ -29,25 +29,25 @@ You can run this benchmark following the [instructions](https://github.com/Pract
 **Comparison shopping of vision API providers (as of Aug 2019)**
 
 Examining services offered by each cloud provider.
-|   | Algorithmia  | Amazon Rekognition  | Clarifai  | Microsoft Cognitive Services  | Google Cloud Vision  | IBM Watson Visual Recognition  |
+|  | Algorithmia | Amazon Rekognition | Clarifai | Microsoft Cognitive Services | Google Cloud Vision | IBM Watson Visual Recognition |
 |---|---|---|---|---|---|---|
-| Image classification | ✔️  |  ✔️ |  ✔️ |  ✔️ | ✔️  | ✔️  |
-| Image detection | ✔️  |  ✔️ |  ❌ |  ✔️ | ✔️  | ❌  |
-| OCR | ✔️  |  ✔️ |  ❌ |  ✔️ | ✔️  | ❌  |
-| Face recognition | ✔️  |  ✔️ |  ❌ |  ✔️ | ❌  | ❌  |
-| Emotion recognition | ✔️  |  ❌ |  ✔️ |  ✔️ | ✔️  | ❌  |
-| Logo recognition | ❌  |  ❌ |  ✔️ |  ✔️ | ✔️  | ❌  |
-| Landmark recognition | ❌  |  ❌ |  ✔️ |  ✔️ | ✔️  | ✔️  |
-| Celebrity recognition | ✔️  |  ✔️ |  ✔️ |  ✔️ | ✔️  | ✔️  |
-| Multi-lingual tagging | ❌  |  ❌ |  ✔️ |  ❌ | ❌  | ❌  |
-| Image description | ❌  |  ❌ |  ❌ |  ✔️ | ❌  | ❌  |
-| Handwriting | ❌  |  ❌ |  ❌ |  ✔️ | ✔️  | ❌  |
-| Thumbnail generation | ✔️  |  ❌ |  ❌ |  ✔️ | ✔️  | ❌  |
-| Content - moderation | ✔️  |  ✔️ |  ✔️ |  ✔️ | ✔️  | ❌  |
-| Custom classification training | ❌  |  ❌ |  ✔️ |  ✔️ | ✔️  | ✔️  |
-| Custom detector training | ❌  |  ❌ |  ❌ |  ✔️ | ✔️  | ❌  |
-| Mobile custom models | ❌  |  ❌ |  ✔️ |  ✔️ | ✔️  | ❌  |
-| Free tier | 5,000 requests per month  |  5,000 requests per month | 5,000 requests per month  |  5,000 requests per month | 1,000 requests per month  | 7,500  |
+| Image classification | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Image detection | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ❌ |
+| OCR | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ❌ |
+| Face recognition | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ |
+| Emotion recognition | ✔️ | ❌ | ✔️ | ✔️ | ✔️ | ❌ |
+| Logo recognition | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ❌ |
+| Landmark recognition | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Celebrity recognition | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Multi-lingual tagging | ❌ | ❌ | ✔️ | ❌ | ❌ | ❌ |
+| Image description | ❌ | ❌ | ❌ | ✔️ | ❌ | ❌ |
+| Handwriting | ❌ | ❌ | ❌ | ✔️ | ✔️ | ❌ |
+| Thumbnail generation | ✔️ | ❌ | ❌ | ✔️ | ✔️ | ❌ |
+| Content - moderation | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
+| Custom classification training | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Custom detector training | ❌ | ❌ | ❌ | ✔️ | ✔️ | ❌ |
+| Mobile custom models | ❌ | ❌ | ✔️ | ✔️ | ✔️ | ❌ |
+| Free tier | 5,000 requests per month | 5,000 requests per month | 5,000 requests per month | 5,000 requests per month | 1,000 requests per month | 7,500 |
 
 ## Code
 
