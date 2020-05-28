@@ -26,7 +26,7 @@ You can run this benchmark following the [instructions](https://github.com/Pract
 **Effect of compressing an image on agreement rate and file size reduction relative to the original image**
 ![](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/22-google-compression-experiment.png)
 
-**Comparision shopping of vision API providers (as of Aug 2019)**
+**Comparison shopping of vision API providers (as of Aug 2019)**
 
 Examining services offered by each cloud provider.
 
