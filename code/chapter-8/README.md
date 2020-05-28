@@ -30,7 +30,7 @@ You can run this benchmark following the [instructions](https://github.com/Pract
 
 Examining services offered by each cloud provider.
 |  | Algorithmia | Amazon Rekognition | Clarifai | Microsoft Cognitive Services | Google Cloud Vision | IBM Watson Visual Recognition |
-|---|---|---|---|---|---|---|
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
 | Image classification | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 | Image detection | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ❌ |
 | OCR | ✔️ | ✔️ | ❌ | ✔️ | ✔️ | ❌ |
