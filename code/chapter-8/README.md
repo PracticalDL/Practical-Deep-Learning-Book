@@ -4,7 +4,7 @@ Work smart, not hard. We utilize the power of cloud AI platforms from Google, Mi
 
 ## Summary of Results
 
-Below, we present the graphical summaries of experiments conducted in chapter 8. For detailed experimental methodology for each experiment, refer to the text in Chapter 8 [visible here.](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch08.html). To reproduce the benchmarks please refer to the [instructions](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/README.md#code).
+Below, we present the graphical summaries of experiments conducted in chapter 8. For detailed experimental methodology for each experiment, refer to the text in Chapter 8 [visible here](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch08.html). To reproduce the benchmarks please refer to the [instructions](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-8/README.md#code).
 
 **Comparing F1 score for custom classifier services, as of August 2019 (higher is better)**
 ![F1 Scores for Custom Classifier](https://raw.githubusercontent.com/PracticalDL/Practical-Deep-Learning-Book/master/code/chapter-8/graphs/19-f1-score-custom.png)
