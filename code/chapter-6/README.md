@@ -9,6 +9,9 @@ This chapter is meant to serve as a handy checklist of potential performance opt
 | Section | Guideline |
 | :---: | :---: |
 | Data Preparation | [Store as TF Records](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-6/storing-data-as-tfrecord.ipynb) |
+| Use TensorFlow Datasets | [chapter-5/1-develop-tool.ipynb](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-5/1-develop-tool.ipynb)  |
+| Use GPU for augmentation |  [NVIDIA/DALI](https://github.com/NVIDIA/DALI) |
+| Use automatic mixed precision | [NVIDIA/apex](https://github.com/NVIDIA/apex)  |
 
 ### How to Use This Checklist
 
