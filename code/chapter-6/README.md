@@ -4,7 +4,7 @@ We take the speed of training and inference into hyperdrive by going through a c
 
 ## Checklist
 
-This chapter is meant to serve as a handy checklist of potential performance optimizations that we can make when building all stages of the deep learning pipelines, and useful throughout the book. Specifically, we will discuss optimizations related to data preparation, data reading, data augmentation, training, and finally inference.
+This chapter is meant to serve as a handy checklist of potential performance optimizations that we can make when building all stages of the deep learning pipelines, and useful throughout the book. Specifically, we will discuss optimizations related to data preparation, data reading, data augmentation, training, and finally inference. Some of the checklist items, such as data preparation is accompanied by a [code sample](https://github.com/PracticalDL/Practical-Deep-Learning-Book/blob/master/code/chapter-6/storing-data-as-tfrecord.ipynb) as well.
 
 ### How to Use This Checklist
 
