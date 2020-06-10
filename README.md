@@ -32,7 +32,7 @@ Relying on years of industry experience transforming deep learning research into
 - Discover 50+ practical tips for maximizing model accuracy and speed, debugging, and scaling to millions of users
 
 ## Chapter List
-[**Chapter 1 - Exploring the Landscape of Artificial Intelligence**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-1) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch01.html)
+[**Chapter 1 - Exploring the Landscape of Artificial Intelligence**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-1) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch01.html) | [Figures](figures/chapter-1)
 
 We take a tour of this evolving landscape, from 1950s till today, and analyze the ingredients that make for a perfect deep learning recipe, get familiar with common AI terminology and datasets, and take a peek into the world of responsible AI.
 
