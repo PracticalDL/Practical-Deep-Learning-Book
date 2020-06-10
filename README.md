@@ -44,7 +44,7 @@ We delve into the world of image classification in a mere five lines of Keras co
 
 We use transfer learning to reuse a previously trained network on a new custom classification task to get near state-of-the-art accuracy in a matter of minutes. We then slice and dice the results to understand how well is it classifying. Along the way, we build a common machine learning pipeline, which is repurposed throughout the book. Bonus: we hear from **Jeremy Howard**, co-founder of fast.ai, on how hundreds of thousands of students use transfer learning to jumpstart their AI journey.
 
-[**Chapter 4 - Building a Reverse Image Search Engine: Understanding Embeddings**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-4) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch04.html)
+[**Chapter 4 - Building a Reverse Image Search Engine: Understanding Embeddings**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-4) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch04.html) | [Figures](figures/chapter-4)
 
 Like Google Reverse Image Search, we explore how one can use embeddings—a contextual representation of an image to find similar images in under ten lines. And then the fun starts when we explore different strategies and algorithms to speed this up at scale, from thousands to several million images, and making them searchable in microseconds.
 

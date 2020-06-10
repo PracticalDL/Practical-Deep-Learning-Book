@@ -1,4 +1,4 @@
-# Chapter 3: Cats Versus Dogs: Transfer Learning in 30 Lines with Keras
+# Chapter 3 - Cats Versus Dogs: Transfer Learning in 30 Lines with Keras
 
 Note: All images in this directory, unless specified otherwise, are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
 
@@ -13,7 +13,7 @@ Note: All images in this directory, unless specified otherwise, are licensed und
 | [3-5](5-finetuning.png?raw=true) | Fine tuning a convolutional neural network | |
 | [3-6](6-folder-tree-structure.png?raw=true) | Example directory structure of the training and validation data for different classes | |
 | [3-7](7-overfitting-underfitting.png?raw=true) | Underfitting, overfitting, and ideal fitting for points close to a sine curve | |
-| [3-8](8-rabbit-augmentations.png?raw=true) | Possible image augmentations generated from a single image | |
+| [3-8](8-rabbit-augmentations.jpg?raw=true) | Possible image augmentations generated from a single image | |
 | [3-9](9-highest-probability-dogs.png?raw=true) | Images with the highest probability of containing dogs | |
 | [3-10](10-lowest-probability-dogs.png?raw=true) | Images with the lowest probability of containing dogs | |
 | [3-11](11-cats-highest-probability-containing-dogs.png?raw=true) | Images of cats with the highest probability of containing dogs | |

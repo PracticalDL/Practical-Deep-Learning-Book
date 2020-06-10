@@ -1,4 +1,4 @@
-# Chapter 2: What's in the Picture: Image Classification with Keras
+# Chapter 2 - What's in the Picture: Image Classification with Keras
 
 Note: All images in this directory, unless specified otherwise, are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
 
