@@ -36,7 +36,7 @@ Relying on years of industry experience transforming deep learning research into
 
 We take a tour of this evolving landscape, from 1950s till today, and analyze the ingredients that make for a perfect deep learning recipe, get familiar with common AI terminology and datasets, and take a peek into the world of responsible AI.
 
-[**Chapter 2 - What’s in the Picture: Image Classification with Keras**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-2) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch02.html)
+[**Chapter 2 - What’s in the Picture: Image Classification with Keras**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-2) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch02.html) | [Figures](figures/chapter-2)
 
 We delve into the world of image classification in a mere five lines of Keras code. We then learn what neural networks are paying attention to while making predictions by overlaying heatmaps on videos. Bonus: we hear the motivating personal journey of **François Chollet**, the creator of Keras, illustrating the impact a single individual can have.
 

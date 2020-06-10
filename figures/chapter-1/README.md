@@ -5,7 +5,7 @@ Note: All images in this directory, unless specified otherwise, are licensed und
 ## Figure List
 
 | Figure number | Description | Notes |
-|:---:|:---:|:---:|
+|:---|:-----|:---|
 | [1-1](1-may-carson.png?raw=true) | Dr. May Carson | |
 | [1-2](2-ai-terminology.png?raw=true) | The relationship between AI, machine learning, and deep learning | |
 | [1-3](3-perceptron.png?raw=true) | An example of a perceptron | |
