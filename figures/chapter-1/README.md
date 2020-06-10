@@ -1,4 +1,4 @@
-# Chapter 1: Exploring the Landscape of Artificial Intelligence
+# Chapter 1 - Exploring the Landscape of Artificial Intelligence
 
 Note: All images in this directory, unless specified otherwise, are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
 
