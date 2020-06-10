@@ -5,11 +5,11 @@ Note: All images in this directory, unless specified otherwise, are licensed und
 ## Figure List
 
 | Figure number | Description | Notes |
-|:---|:-----|:---|
+|:---|:---|:---|
 | [1-1](1-may-carson.png?raw=true) | Dr. May Carson | |
 | [1-2](2-ai-terminology.png?raw=true) | The relationship between AI, machine learning, and deep learning | |
 | [1-3](3-perceptron.png?raw=true) | An example of a perceptron | |
-| [1-4](4-neural-network.png?raw=true) | An example multilayer neural network | Built using [NN-SVG](http://alexlenail.me/NN-SVG/) | |
+| [1-4](4-neural-network.png?raw=true) | An example multilayer neural network | Built using [NN-SVG](http://alexlenail.me/NN-SVG/) |
 | [1-5](http://www.cs.cmu.edu/Groups/ahs/navlab_list.html) | The autonomous NavLab 1 from 1986 in all its glory | |
 | [1-6](6-mnist.png?raw=true) | A sample of handwritten digits from the MNIST dataset | |
 | [1-7](7-imagenet-accuracy.png?raw=true) | Evolution of winning entries at ImageNet LSVRC | |

@@ -5,7 +5,7 @@ Note: All images in this directory, unless specified otherwise, are licensed und
 ## Figure List
 
 | Figure number | Description |
-|:---|:-----|
+|:---|:---|
 | [2-1](1-cat-visualization.png?raw=true) | Plot showing the contents of the input file cat.jpg |
 | [2-2](2-dog-visualization.png?raw=true) | Plot showing the contents of the input file dog.jpg |
 | [2-3](3-colab-play.png?raw=true) | Running the notebook on Google Colab using the browser |
