@@ -10,7 +10,7 @@ This directory contains references to the figures used within the book. All imag
 |:---|
 | [Chapter 1 - Exploring the Landscape of Artificial Intelligence](chapter-1/) |
 | [Chapter 2 - What’s in the Picture: Image Classification with Keras](chapter-2/) |
-| Chapter 3 - Cats versus Dogs: Transfer Learning in 30 Lines with Keras |
+| [Chapter 3 - Cats versus Dogs: Transfer Learning in 30 Lines with Keras](chapter-3/) |
 | Chapter 4 - Building a Reverse Image Search Engine: Understanding Embeddings |
 | Chapter 5 - From Novice to Master Predictor: Maximizing Convolutional Neural Network Accuracy |
 | Chapter 6 - Maximizing Speed and Performance of TensorFlow: A Handy Checklist |

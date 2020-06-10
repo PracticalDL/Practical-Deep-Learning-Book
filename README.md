@@ -40,7 +40,7 @@ We take a tour of this evolving landscape, from 1950s till today, and analyze th
 
 We delve into the world of image classification in a mere five lines of Keras code. We then learn what neural networks are paying attention to while making predictions by overlaying heatmaps on videos. Bonus: we hear the motivating personal journey of **François Chollet**, the creator of Keras, illustrating the impact a single individual can have.
 
-[**Chapter 3 - Cats versus Dogs: Transfer Learning in 30 Lines with Keras**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-3) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch03.html)
+[**Chapter 3 - Cats versus Dogs: Transfer Learning in 30 Lines with Keras**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-3) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch03.html) | [Figures](figures/chapter-3)
 
 We use transfer learning to reuse a previously trained network on a new custom classification task to get near state-of-the-art accuracy in a matter of minutes. We then slice and dice the results to understand how well is it classifying. Along the way, we build a common machine learning pipeline, which is repurposed throughout the book. Bonus: we hear from **Jeremy Howard**, co-founder of fast.ai, on how hundreds of thousands of students use transfer learning to jumpstart their AI journey.
 
