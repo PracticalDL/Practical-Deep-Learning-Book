@@ -1,11 +1,11 @@
-# Chapter 6 - Maximizing Speed and Performance of TensorFlow: A Handy Checklist
+# Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes
 
 Note: All images in this directory, unless specified otherwise, are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
 
 ## Figure List
 
-| Figure number | Description | Notes |
-|:---|:---|:---|
+| Figure number | Description |
+|:---|:---|
 | [8-1](1-clarifai-results.png) | Sample of Clarifai’s results |
 | [8-2](2-cognitive-results.png) | Sample of Microsoft Cognitive Services results |
 | [8-3](3-google-cloud-results.png) | Sample of Google Cloud Vision’s results |
