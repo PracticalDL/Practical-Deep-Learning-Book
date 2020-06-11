@@ -15,7 +15,7 @@ This directory contains references to the figures used within the book. All imag
 | [Chapter 5 - From Novice to Master Predictor: Maximizing Convolutional Neural Network Accuracy](chapter-5/) |
 | [Chapter 6 - Maximizing Speed and Performance of TensorFlow: A Handy Checklist](chapter-6/) |
 | Chapter 7 - Practical Tools, Tips, and Tricks |
-| Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes |
+| [Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes](chapter-8/) |
 | Chapter 9 - Scalable Inference Serving on Cloud with TensorFlow Serving and KubeFlow |
 | Chapter 10 - AI in the Browser with TensorFlow.js and ml5.js |
 | Chapter 11 - Real-Time Object Classification on iOS with Core ML |

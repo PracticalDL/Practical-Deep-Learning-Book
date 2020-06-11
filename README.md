@@ -60,7 +60,7 @@ We take the speed of training and inference into hyperdrive by going through a c
 
 We diversify our practical skills in a variety of topics and tools, ranging from installation, data collection, experiment management, visualizations, keeping track of the state-of-the-art in research all the way to exploring further avenues for building the theoretical foundations of deep learning.
 
-[**Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-8) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch08.html)
+[**Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-8) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch08.html) | [Figures](figures/chapter-8)
 
 Work smart, not hard. We utilize the power of cloud AI platforms from Google, Microsoft, Amazon, IBM and Clarifai in under 15 minutes. For tasks not solved with existing APIs, we then use custom classification services to train classifiers without coding. And then we pit them against each other in an open benchmark, you might be surprised who won.
 
