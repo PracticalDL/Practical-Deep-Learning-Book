@@ -52,7 +52,7 @@ Like Google Reverse Image Search, we explore how one can use embeddings—a cont
 
 We explore strategies to maximize the accuracy that our classifier can achieve, with the help of a range of tools including TensorBoard, What-If Tool, tf-explain, TensorFlow Datasets, AutoKeras, AutoAugment. Along the way, we conduct experiments to develop an intuition of what parameters might or might not work for your AI task.
 
-[**Chapter 6 - Maximizing Speed and Performance of TensorFlow: A Handy Checklist**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-6) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch06.html)
+[**Chapter 6 - Maximizing Speed and Performance of TensorFlow: A Handy Checklist**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-6) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch06.html) | [Figures](figures/chapter-6)
 
 We take the speed of training and inference into hyperdrive by going through a checklist of 30 tricks to reduce as many inefficiencies as possible and maximize the value of your current hardware.
 
