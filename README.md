@@ -64,7 +64,7 @@ We diversify our practical skills in a variety of topics and tools, ranging from
 
 Work smart, not hard. We utilize the power of cloud AI platforms from Google, Microsoft, Amazon, IBM and Clarifai in under 15 minutes. For tasks not solved with existing APIs, we then use custom classification services to train classifiers without coding. And then we pit them against each other in an open benchmark, you might be surprised who won.
 
-[**Chapter 9 - Scalable Inference Serving on Cloud with TensorFlow Serving and KubeFlow**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-9) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch09.html)
+[**Chapter 9 - Scalable Inference Serving on Cloud with TensorFlow Serving and KubeFlow**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-9) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch09.html) | [Figures](figures/chapter-9)
 
 We take our custom trained model to the cloud/on-premises to scalably serve from tens to millions of requests. We explore Flask, Google Cloud ML Engine, TensorFlow Serving, and KubeFlow, showcasing the effort, scenario, and cost-benefit analysis.
 

@@ -16,7 +16,7 @@ This directory contains references to the figures used within the book. All imag
 | [Chapter 6 - Maximizing Speed and Performance of TensorFlow: A Handy Checklist](chapter-6/) |
 | Chapter 7 - Practical Tools, Tips, and Tricks |
 | [Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes](chapter-8/) |
-| Chapter 9 - Scalable Inference Serving on Cloud with TensorFlow Serving and KubeFlow |
+| [Chapter 9 - Scalable Inference Serving on Cloud with TensorFlow Serving and KubeFlow](chapter-9/) |
 | Chapter 10 - AI in the Browser with TensorFlow.js and ml5.js |
 | Chapter 11 - Real-Time Object Classification on iOS with Core ML |
 | Chapter 12 - Not Hotdog on iOS with Core ML and Create ML |
