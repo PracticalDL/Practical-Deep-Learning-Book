@@ -48,7 +48,7 @@ We use transfer learning to reuse a previously trained network on a new custom c
 
 Like Google Reverse Image Search, we explore how one can use embeddings—a contextual representation of an image to find similar images in under ten lines. And then the fun starts when we explore different strategies and algorithms to speed this up at scale, from thousands to several million images, and making them searchable in microseconds.
 
-[**Chapter 5 - From Novice to Master Predictor: Maximizing Convolutional Neural Network Accuracy**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-5) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch05.html)
+[**Chapter 5 - From Novice to Master Predictor: Maximizing Convolutional Neural Network Accuracy**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-5) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch05.html) | [Figures](figures/chapter-5)
 
 We explore strategies to maximize the accuracy that our classifier can achieve, with the help of a range of tools including TensorBoard, What-If Tool, tf-explain, TensorFlow Datasets, AutoKeras, AutoAugment. Along the way, we conduct experiments to develop an intuition of what parameters might or might not work for your AI task.
 
