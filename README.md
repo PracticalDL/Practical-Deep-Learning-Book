@@ -84,7 +84,7 @@ Silicon Valley’s Not Hotdog app (from HBO) is considered the “Hello World”
 
 We bring AI to Android with the help of TensorFlow Lite. We then look at cross-platform development using ML Kit (which is built on top of TensorFlow Lite) and Fritz to explore the end-to-end development life cycle for building a self-improving AI app. Along the way we look at model versioning, A/B testing, measuring success, dynamic updates, model optimization, and other topics. Bonus: We get to hear about **Pete Warden’s** (technical lead for Mobile and Embedded TensorFlow) rich experience in bringing AI to edge devices.
 
-[**Chapter 14 - Building the Purrfect Cat Locator App with TensorFlow Object Detection API**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-14) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch14.html)
+[**Chapter 14 - Building the Purrfect Cat Locator App with TensorFlow Object Detection API**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-14) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch14.html) | [Figures](figures/chapter-14)
 
 We explore four different methods for locating the position of objects within images. We take a look at the evolution of object detection over the years, and analyze the tradeoffs between speed and accuracy. This builds the base for case studies such as crowd counting, face detection, and autonomous cars.
 
