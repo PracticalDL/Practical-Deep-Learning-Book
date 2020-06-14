@@ -22,6 +22,6 @@ This directory contains references to the figures used within the book. All imag
 | Chapter 12 - Not Hotdog on iOS with Core ML and Create ML |
 | Chapter 13 - Shazam for Food: Developing Android Apps with TensorFlow Lite and ML Kit |
 | Chapter 14 - Building the Purrfect Cat Locator App with TensorFlow Object Detection API |
-| Chapter 15 - Becoming a Maker: Exploring Embedded AI at the Edge |
+| [Chapter 15 - Becoming a Maker: Exploring Embedded AI at the Edge](chapter-15/) |
 | Chapter 16 - Simulating a Self-Driving Car using End-to-End Deep Learning with Keras |
 | Chapter 17 - Building an Autonomous Car in Under an Hour: Reinforcement Learning with AWS DeepRacer |

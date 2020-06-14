@@ -88,7 +88,7 @@ We bring AI to Android with the help of TensorFlow Lite. We then look at cross-p
 
 We explore four different methods for locating the position of objects within images. We take a look at the evolution of object detection over the years, and analyze the tradeoffs between speed and accuracy. This builds the base for case studies such as crowd counting, face detection, and autonomous cars.
 
-[**Chapter 15 - Becoming a Maker: Exploring Embedded AI at the Edge**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-15) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch15.html)
+[**Chapter 15 - Becoming a Maker: Exploring Embedded AI at the Edge**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-15) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch15.html) | [Figures](figures/chapter-15)
 
 Guest author Sam Sterckval brings deep learning to low-power devices as he showcases a range of AI-capable edge devices with varying processing power and cost including Raspberry Pi, NVIDIA Jetson Nano, Google Coral, Intel Movidius, PYNQ-Z2 FPGA, opening the doors for robotics and maker projects. Bonus: Hear from the **NVIDIA Jetson Nano team** on how people are building creative robots quickly from their open-sourced recipe book.
 
