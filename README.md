@@ -96,7 +96,7 @@ Guest author Sam Sterckval brings deep learning to low-power devices as he showc
 
 Using the photorealistic simulation environment of Microsoft AirSim, guest authors **Aditya Sharma** and **Mitchell Spryn** guide us in training a virtual car by driving it first within the environment and then teaching an AI model to replicate its behavior. Along the way, this chapter covers a number of concepts that are applicable in the autonomous car industry.
 
-[**Chapter 17 - Building an Autonomous Car in Under an Hour: Reinforcement Learning with AWS DeepRacer**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-17) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch17.html)
+[**Chapter 17 - Building an Autonomous Car in Under an Hour: Reinforcement Learning with AWS DeepRacer**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-17) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch17.html) | [Figures](figures/chapter-17)
 
 Moving from the virtual to the physical world, guest author **Sunil Mallya** showcases how AWS DeepRacer, a miniature car, can be assembled, trained and raced in under an hour. And with the help of reinforcement learning, the car learns to drive on its own, penalizing mistakes and maximizing success. We learn how to apply this knowledge to races from the Olympics of AI Driving to RoboRace (using full-sized autonomous cars). Bonus: Hear from **Anima Anandkumar (NVIDIA)** and **Chris Anderson (founder of DIY Robocars)** on where the self-driving automotive industry is headed.
 
