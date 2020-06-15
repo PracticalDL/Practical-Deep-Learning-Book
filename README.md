@@ -92,7 +92,7 @@ We explore four different methods for locating the position of objects within im
 
 Guest author Sam Sterckval brings deep learning to low-power devices as he showcases a range of AI-capable edge devices with varying processing power and cost including Raspberry Pi, NVIDIA Jetson Nano, Google Coral, Intel Movidius, PYNQ-Z2 FPGA, opening the doors for robotics and maker projects. Bonus: Hear from the **NVIDIA Jetson Nano team** on how people are building creative robots quickly from their open-sourced recipe book.
 
-[**Chapter 16 - Simulating a Self-Driving Car using End-to-End Deep Learning with Keras**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-16) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch16.html)
+[**Chapter 16 - Simulating a Self-Driving Car using End-to-End Deep Learning with Keras**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-16) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch16.html) | [Figures](figures/chapter-16)
 
 Using the photorealistic simulation environment of Microsoft AirSim, guest authors **Aditya Sharma** and **Mitchell Spryn** guide us in training a virtual car by driving it first within the environment and then teaching an AI model to replicate its behavior. Along the way, this chapter covers a number of concepts that are applicable in the autonomous car industry.
 
