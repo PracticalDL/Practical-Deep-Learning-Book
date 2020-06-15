@@ -56,7 +56,7 @@ We explore strategies to maximize the accuracy that our classifier can achieve, 
 
 We take the speed of training and inference into hyperdrive by going through a checklist of 30 tricks to reduce as many inefficiencies as possible and maximize the value of your current hardware.
 
-[**Chapter 7 - Practical Tools, Tips, and Tricks**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-7) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch07.html)
+[**Chapter 7 - Practical Tools, Tips, and Tricks**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-7) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch07.html) | [Figures](figures/chapter-7)
 
 We diversify our practical skills in a variety of topics and tools, ranging from installation, data collection, experiment management, visualizations, keeping track of the state-of-the-art in research all the way to exploring further avenues for building the theoretical foundations of deep learning.
 
