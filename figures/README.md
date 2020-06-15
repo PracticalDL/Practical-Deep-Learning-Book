@@ -17,7 +17,7 @@ This directory contains references to the figures used within the book. All imag
 | Chapter 7 - Practical Tools, Tips, and Tricks |
 | [Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes](chapter-8/) |
 | [Chapter 9 - Scalable Inference Serving on Cloud with TensorFlow Serving and KubeFlow](chapter-9/) |
-| Chapter 10 - AI in the Browser with TensorFlow.js and ml5.js |
+| [Chapter 10 - AI in the Browser with TensorFlow.js and ml5.js](chapter-10/) |
 | Chapter 11 - Real-Time Object Classification on iOS with Core ML |
 | Chapter 12 - Not Hotdog on iOS with Core ML and Create ML |
 | Chapter 13 - Shazam for Food: Developing Android Apps with TensorFlow Lite and ML Kit |
