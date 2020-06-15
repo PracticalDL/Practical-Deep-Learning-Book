@@ -80,7 +80,7 @@ We explore the landscape of deep learning on mobile, with a sharp focus on the A
 
 Silicon Valley’s Not Hotdog app (from HBO) is considered the “Hello World” of mobile AI, so we pay tribute by building a real-time version in not one, not two, but three different ways.
 
-[**Chapter 13 - Shazam for Food: Developing Android Apps with TensorFlow Lite and ML Kit**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-13) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch13.html)
+[**Chapter 13 - Shazam for Food: Developing Android Apps with TensorFlow Lite and ML Kit**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-13) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch13.html) | [Figures](figures/chapter-13)
 
 We bring AI to Android with the help of TensorFlow Lite. We then look at cross-platform development using ML Kit (which is built on top of TensorFlow Lite) and Fritz to explore the end-to-end development life cycle for building a self-improving AI app. Along the way we look at model versioning, A/B testing, measuring success, dynamic updates, model optimization, and other topics. Bonus: We get to hear about **Pete Warden’s** (technical lead for Mobile and Embedded TensorFlow) rich experience in bringing AI to edge devices.
 
