@@ -68,7 +68,7 @@ Work smart, not hard. We utilize the power of cloud AI platforms from Google, Mi
 
 We take our custom trained model to the cloud/on-premises to scalably serve from tens to millions of requests. We explore Flask, Google Cloud ML Engine, TensorFlow Serving, and KubeFlow, showcasing the effort, scenario, and cost-benefit analysis.
 
-[**Chapter 10 - AI in the Browser with TensorFlow.js and ml5.js**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-10) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch10.html)
+[**Chapter 10 - AI in the Browser with TensorFlow.js and ml5.js**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-10) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch10.html) | [Figures](figures/chapter-10)
 
 Every single individual who uses a computer or a smartphone uniformly has access to one software program—their browser. Reach all those users with browser-based deep learning libraries including TensorFlow.js and ml5.js. Guest author **Zaid Alyafeai** walks us through techniques and tasks such as body pose estimation, generative adversarial networks (GANs), image-to-image translation with Pix2Pix and more, running not on a server but in the browser itself. Bonus: Hear from TensorFlow.js and ml5.js teams on how the projects incubated.
 
