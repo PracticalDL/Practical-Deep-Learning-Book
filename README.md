@@ -72,7 +72,7 @@ We take our custom trained model to the cloud/on-premises to scalably serve from
 
 Every single individual who uses a computer or a smartphone uniformly has access to one software program—their browser. Reach all those users with browser-based deep learning libraries including TensorFlow.js and ml5.js. Guest author **Zaid Alyafeai** walks us through techniques and tasks such as body pose estimation, generative adversarial networks (GANs), image-to-image translation with Pix2Pix and more, running not on a server but in the browser itself. Bonus: Hear from TensorFlow.js and ml5.js teams on how the projects incubated.
 
-[**Chapter 11 - Real-Time Object Classification on iOS with Core ML**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-11) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch11.html)
+[**Chapter 11 - Real-Time Object Classification on iOS with Core ML**](https://github.com/practicaldl/Practical-Deep-Learning-Book/tree/master/code/chapter-11) | [Read online](https://learning.oreilly.com/library/view/practical-deep-learning/9781492034858/ch11.html) | [Figures](figures/chapter-11)
 
 We explore the landscape of deep learning on mobile, with a sharp focus on the Apple ecosystem with Core ML. We benchmark models on different iPhones, investigate strategies to reduce app size and energy impact, dynamic model deployment, training on device, and how professional apps are built.
 
