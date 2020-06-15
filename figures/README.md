@@ -4,8 +4,6 @@ This directory contains references to the figures used within the book. All imag
 
 ## Chapter List
 
-(Work in progress...)
-
 | Chapters |
 |:---|
 | [Chapter 1 - Exploring the Landscape of Artificial Intelligence](chapter-1/) |
@@ -14,7 +12,7 @@ This directory contains references to the figures used within the book. All imag
 | [Chapter 4 - Building a Reverse Image Search Engine: Understanding Embeddings](chapter-4/) |
 | [Chapter 5 - From Novice to Master Predictor: Maximizing Convolutional Neural Network Accuracy](chapter-5/) |
 | [Chapter 6 - Maximizing Speed and Performance of TensorFlow: A Handy Checklist](chapter-6/) |
-| Chapter 7 - Practical Tools, Tips, and Tricks |
+| [Chapter 7 - Practical Tools, Tips, and Tricks](chapter-7/) |
 | [Chapter 8 - Cloud APIs for Computer Vision: Up and Running in 15 Minutes](chapter-8/) |
 | [Chapter 9 - Scalable Inference Serving on Cloud with TensorFlow Serving and KubeFlow](chapter-9/) |
 | [Chapter 10 - AI in the Browser with TensorFlow.js and ml5.js](chapter-10/) |
