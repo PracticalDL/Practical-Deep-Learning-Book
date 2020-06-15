@@ -6,7 +6,7 @@ Note: All images in this directory, unless specified otherwise, are licensed und
 
 | Figure number | Description |
 |:---|:---|
-| [12-1](1-jian-yang-bloomberg.png) | Jian-Yang being interviewed by Bloomberg News after Periscope acquires his “Not Hotdog” technology (image source: From HBO’s Silicon Valley) |
+| [12-1](https://www.youtube.com/watch?v=AJsOA4Zl6Io) | Jian-Yang being interviewed by Bloomberg News after Periscope acquires his “Not Hotdog” technology (image source: From HBO’s Silicon Valley) |
 | [12-2](https://apps.apple.com/us/app/not-hotdog/id1212457521) | The Not Hotdog app in action (image source: Apple App Store listing for the Not Hotdog app) |
 | [12-3](3-bing-fatkun.png) | Bing Search results for "hot dog" |
 | [12-4](4-fatkun-select-image.png) | Selecting images through the Fatkun extension |
