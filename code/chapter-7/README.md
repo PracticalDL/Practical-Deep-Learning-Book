@@ -38,6 +38,12 @@ Table of contents
   * [Q: ResNet and MobileNet work well enough for my use case. Is it possible to build a model architecture that can achieve even higher accuracy for my scenario?](#q-resnet-and-mobilenet-work-well-enough-for-my-use-case-is-it-possible-to-build-a-model-architecture-that-can-achieve-even-higher-accuracy-for-my-scenario)
   * [Q: How do I go about debugging my TensorFlow script?](#q-how-do-i-go-about-debugging-my-tensorflow-script)
   * [Q: Is there a way to profile my code?](#q-is-there-a-way-to-profile-my-code)
+- [Distributed Training](#distributed-training)
+  * [Q: How can I make my Keras code 30x faster? Is there another magic one liner that I can use?](#q-how-can-i-make-my-keras-code-30x-faster-is-there-another-magic-one-liner-that-i-can-use)
+  * [Q: What are some frameworks I can use to distribute training with minimal code changes?](#q-what-are-some-frameworks-i-can-use-to-distribute-training-with-minimal-code-changes)
+- [Production](#production)
+  * [Q: What are some open source libraries that ease deployment and monitoring of deployed models?](#q-what-are-some-open-source-libraries-that-ease-deployment-and-monitoring-of-deployed-models)
+  * [Q: How can I stay updated on the best practices in deployment?](#q-how-can-i-stay-updated-on-the-best-practices-in-deployment)
 - [Model](#model)
   * [Q: I want to quickly know the input and output layers of my model without writing code. How can I accomplish that?](#q-i-want-to-quickly-know-the-input-and-output-layers-of-my-model-without-writing-code-how-can-i-accomplish-that)
   * [Q: I need to publish a research paper. Which tool should I use to draw my organic, free-range, gluten-free model architecture?](#q-i-need-to-publish-a-research-paper-which-tool-should-i-use-to-draw-my-organic-free-range-gluten-free-model-architecture)
@@ -210,6 +216,29 @@ Checkout the blog post from the TensorFlow team: https://www.tensorflow.org/guid
 
 **Cuda profiler**: This NVIDIA released profiling tool enables you to understand and optimize the performance of your CUDA, OpenACC or OpenMP applications. The Visual Profiler is a graphical profiling tool that displays a timeline of your application's CPU and GPU activity, and that includes an automated analysis engine to identify optimization opportunities. The nvprof profiling tool enables you to collect and view profiling data from the command-line: https://docs.nvidia.com/cuda/profiler-users-guide/index.html 
 
+## Distributed Training
+
+### Q: How can I make my Keras code 30x faster? Is there another magic one liner that I can use?
+
+Of Course there is! Using UC Berkeley's Ray as a distribution method under the hood while maintaining the same Keras API gives us an open-source framework called dKeras: https://github.com/dkeras-project/dkeras.
+
+There’s a fantastic article on Medium introducing dKeras that talks about the functionalities that it offers: https://medium.com/@offercstephen/dkeras-make-keras-faster-with-a-few-lines-of-code-a1792b12dfa0.
+
+### Q: What are some frameworks I can use to distribute training with minimal code changes?
+
+DeepSpeed from Microsoft is a deep learning optimization library that makes distributed training easy, efficient, and effective. It claims to enable training models with over a hundred billion parameters on the latest GPUs and achieves 10x system performance over SOTA: https://github.com/microsoft/DeepSpeed/blob/master/README.md
+
+## Production
+
+### Q: What are some open source libraries that ease deployment and monitoring of deployed models?
+
+There are a bunch of open source libraries that not only help in deployment but also enable scaling, automatic versioning, monitoring of deployed models and making sure that your model is kept hidden from prying eyes. You can find a detailed list here: https://github.com/EthicalML/awesome-production-machine-learning
+
+### Q: How can I stay updated on the best practices in deployment?
+
+The ML in Production newsletter publishes best practices for running ML systems in production: https://mlinproduction.com/
+
+One of the more latest open source platforms for model serving is BentoML. Check out this Reddit thread for a cost comparison between BentoML, TensorFlow Serving, Clipper and AWS SageMaker: https://www.reddit.com/r/deeplearning/comments/g1civx/bentoml_an_opensource_platform_for/
 
 ## Model
 
