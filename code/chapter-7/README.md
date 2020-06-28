@@ -18,58 +18,64 @@ Please file a issue according to [CONTRIBUTING](https://github.com/practicaldl/P
 Table of contents
 =================
 - [Installation](#installation)
-  * [Q: I came across an interesting and useful Jupyter Notebook on GitHub. Making the code run will require cloning the repository, installing packages, setting up the environment, and more steps. Is there an instant way to run it interactively?](#q--i-came-across-an-interesting-and-useful-jupyter-notebook-on-github-making-the-code-run-will-require-cloning-the-repository--installing-packages--setting-up-the-environment--and-more-steps-is-there-an-instant-way-to-run-it-interactively-)
-  * [Q: What is the quickest way to get my deep learning setup running on a fresh Ubuntu machine with NVIDIA Graphics Processing Units (GPUs)?](#q--what-is-the-quickest-way-to-get-my-deep-learning-setup-running-on-a-fresh-ubuntu-machine-with-nvidia-graphics-processing-units--gpus--)
-  * [Q: What is the fastest way to install TensorFlow on a Windows PC?](#q--what-is-the-fastest-way-to-install-tensorflow-on-a-windows-pc-)
-  * [Q: I have an AMD GPU. Could I benefit from GPU speedups in TensorFlow on my existing system?](#q--i-have-an-amd-gpu-could-i-benefit-from-gpu-speedups-in-tensorflow-on-my-existing-system-)
-  * [Q: Forget installation, where can I get preinstalled deep learning containers?](#q--forget-installation--where-can-i-get-preinstalled-deep-learning-containers-)
-  * [Q: I just learnt about this new shiny Python package. What are the different tools to install a Python package?](#q--i-just-learnt-about-this-new-shiny-python-package-what-are-the-different-tools-to-install-a-python-package-)
+  * [Q: I came across an interesting and useful Jupyter Notebook on GitHub. Making the code run will require cloning the repository, installing packages, setting up the environment, and more steps. Is there an instant way to run it interactively?](#q-i-came-across-an-interesting-and-useful-jupyter-notebook-on-github-making-the-code-run-will-require-cloning-the-repository-installing-packages-setting-up-the-environment-and-more-steps-is-there-an-instant-way-to-run-it-interactively)
+  * [Q: What is the quickest way to get my deep learning setup running on a fresh Ubuntu machine with NVIDIA Graphics Processing Units (GPUs)?](#q-what-is-the-quickest-way-to-get-my-deep-learning-setup-running-on-a-fresh-ubuntu-machine-with-nvidia-graphics-processing-units-gpus)
+  * [Q: What is the fastest way to install TensorFlow on a Windows PC?](#q-what-is-the-fastest-way-to-install-tensorflow-on-a-windows-pc)
+  * [Q: I have an AMD GPU. Could I benefit from GPU speedups in TensorFlow on my existing system?](#q-i-have-an-amd-gpu-could-i-benefit-from-gpu-speedups-in-tensorflow-on-my-existing-system)
+  * [Q: Forget installation, where can I get preinstalled deep learning containers?](#q-forget-installation-where-can-i-get-preinstalled-deep-learning-containers)
+  * [Q: I just learnt about this new shiny Python package. What are the different tools to install a Python package?](#q-i-just-learnt-about-this-new-shiny-python-package-what-are-the-different-tools-to-install-a-python-package)
 - [Hardware](#hardware)
-  * [Q: Do I really need a GPU?](#q--do-i-really-need-a-gpu-)
-  * [Q: I don’t have that kind of money. Could I get a free GPU please?](#q--i-don-t-have-that-kind-of-money-could-i-get-a-free-gpu-please-)
-  * [Q: Is there a way I can calculate the energy consumption of my model?](#q--is-there-a-way-i-can-calculate-the-energy-consumption-of-my-model-)
+  * [Q: Do I really need a GPU?](#q-do-i-really-need-a-gpu)
+  * [Q: I don’t have that kind of money. Could I get a free GPU please?](#q-i-don-t-have-that-kind-of-money-could-i-get-a-free-gpu-please)
+  * [Q: Is there a way I can calculate the energy consumption of my model?](#q-is-there-a-way-i-can-calculate-the-energy-consumption-of-my-model)
 - [Training](#training)
-  * [Q: I don’t like having to stare at my screen constantly to check whether my training finished. Can I get a notification alert on my phone, instead?](#q--i-don-t-like-having-to-stare-at-my-screen-constantly-to-check-whether-my-training-finished-can-i-get-a-notification-alert-on-my-phone--instead-)
-  * [Q: I prefer graphics and visualizations over plain text. Can I get real-time visualizations for my training process?](#q--i-prefer-graphics-and-visualizations-over-plain-text-can-i-get-real-time-visualizations-for-my-training-process-)
-  * [Q: I conduct a lot of experiments iteratively and often lose track of what changed between each experiment as well as the effect of the change. How do I manage my experiments in a more organized manner?](#q--i-conduct-a-lot-of-experiments-iteratively-and-often-lose-track-of-what-changed-between-each-experiment-as-well-as-the-effect-of-the-change-how-do-i-manage-my-experiments-in-a-more-organized-manner-)
-  * [Q: How do I check whether TensorFlow is using the GPU(s) on my machine?](#q--how-do-i-check-whether-tensorflow-is-using-the-gpu-s--on-my-machine-)
-  * [Q: I have multiple GPUs on my machine. I don’t want my training script to consume all of them. How do I restrict my script to run on only a specific GPU?](#q--i-have-multiple-gpus-on-my-machine-i-don-t-want-my-training-script-to-consume-all-of-them-how-do-i-restrict-my-script-to-run-on-only-a-specific-gpu-)
-  * [Q: Sometimes, it feels like there are too many knobs to adjust when training. Can it be done automatically, instead, to get the best accuracy?](#q--sometimes--it-feels-like-there-are-too-many-knobs-to-adjust-when-training-can-it-be-done-automatically--instead--to-get-the-best-accuracy-)
-  * [Q: ResNet and MobileNet work well enough for my use case. Is it possible to build a model architecture that can achieve even higher accuracy for my scenario?](#q--resnet-and-mobilenet-work-well-enough-for-my-use-case-is-it-possible-to-build-a-model-architecture-that-can-achieve-even-higher-accuracy-for-my-scenario-)
-  * [Q: How do I go about debugging my TensorFlow script?](#q--how-do-i-go-about-debugging-my-tensorflow-script-)
-  * [Q: Is there a way to profile my code?](#q--is-there-a-way-to-profile-my-code-)
+  * [Q: I don’t like having to stare at my screen constantly to check whether my training finished. Can I get a notification alert on my phone, instead?](#q-i-don-t-like-having-to-stare-at-my-screen-constantly-to-check-whether-my-training-finished-can-i-get-a-notification-alert-on-my-phone-instead)
+  * [Q: I prefer graphics and visualizations over plain text. Can I get real-time visualizations for my training process?](#q-i-prefer-graphics-and-visualizations-over-plain-text-can-i-get-real-time-visualizations-for-my-training-process)
+  * [Q: I conduct a lot of experiments iteratively and often lose track of what changed between each experiment as well as the effect of the change. How do I manage my experiments in a more organized manner?](#q-i-conduct-a-lot-of-experiments-iteratively-and-often-lose-track-of-what-changed-between-each-experiment-as-well-as-the-effect-of-the-change-how-do-i-manage-my-experiments-in-a-more-organized-manner)
+  * [Q: How do I check whether TensorFlow is using the GPU(s) on my machine?](#q-how-do-i-check-whether-tensorflow-is-using-the-gpu-s-on-my-machine)
+  * [Q: I have multiple GPUs on my machine. I don’t want my training script to consume all of them. How do I restrict my script to run on only a specific GPU?](#q-i-have-multiple-gpus-on-my-machine-i-don-t-want-my-training-script-to-consume-all-of-them-how-do-i-restrict-my-script-to-run-on-only-a-specific-gpu)
+  * [Q: Sometimes, it feels like there are too many knobs to adjust when training. Can it be done automatically, instead, to get the best accuracy?](#q-sometimes-it-feels-like-there-are-too-many-knobs-to-adjust-when-training-can-it-be-done-automatically-instead-to-get-the-best-accuracy)
+  * [Q: ResNet and MobileNet work well enough for my use case. Is it possible to build a model architecture that can achieve even higher accuracy for my scenario?](#q-resnet-and-mobilenet-work-well-enough-for-my-use-case-is-it-possible-to-build-a-model-architecture-that-can-achieve-even-higher-accuracy-for-my-scenario)
+  * [Q: How do I go about debugging my TensorFlow script?](#q-how-do-i-go-about-debugging-my-tensorflow-script)
+  * [Q: Is there a way to profile my code?](#q-is-there-a-way-to-profile-my-code)
+- [Distributed Training](#distributed-training)
+  * [Q: How can I make my Keras code 30x faster? Is there another magic one liner that I can use?](#q-how-can-i-make-my-keras-code-30x-faster-is-there-another-magic-one-liner-that-i-can-use)
+  * [Q: What are some frameworks I can use to distribute training with minimal code changes?](#q-what-are-some-frameworks-i-can-use-to-distribute-training-with-minimal-code-changes)
+- [Production](#production)
+  * [Q: What are some open source libraries that ease deployment and monitoring of deployed models?](#q-what-are-some-open-source-libraries-that-ease-deployment-and-monitoring-of-deployed-models)
+  * [Q: How can I stay updated on the best practices in deployment?](#q-how-can-i-stay-updated-on-the-best-practices-in-deployment)
 - [Model](#model)
-  * [Q: I want to quickly know the input and output layers of my model without writing code. How can I accomplish that?](#q--i-want-to-quickly-know-the-input-and-output-layers-of-my-model-without-writing-code-how-can-i-accomplish-that-)
-  * [Q: I need to publish a research paper. Which tool should I use to draw my organic, free-range, gluten-free model architecture?](#q--i-need-to-publish-a-research-paper-which-tool-should-i-use-to-draw-my-organic--free-range--gluten-free-model-architecture-)
-  * [Q: Is there a one-stop shop for all models?](#q--is-there-a-one-stop-shop-for-all-models-)
-  * [Q: I’ve finished training my model. How can I make it available for others to use?](#q--i-ve-finished-training-my-model-how-can-i-make-it-available-for-others-to-use-)
-  * [Q: I have a model previously trained in framework X but I need to use it in framework Y. Do I need to waste time retraining it in framework Y?](#q--i-have-a-model-previously-trained-in-framework-x-but-i-need-to-use-it-in-framework-y-do-i-need-to-waste-time-retraining-it-in-framework-y-)
+  * [Q: I want to quickly know the input and output layers of my model without writing code. How can I accomplish that?](#q-i-want-to-quickly-know-the-input-and-output-layers-of-my-model-without-writing-code-how-can-i-accomplish-that)
+  * [Q: I need to publish a research paper. Which tool should I use to draw my organic, free-range, gluten-free model architecture?](#q-i-need-to-publish-a-research-paper-which-tool-should-i-use-to-draw-my-organic-free-range-gluten-free-model-architecture)
+  * [Q: Is there a one-stop shop for all models?](#q-is-there-a-one-stop-shop-for-all-models)
+  * [Q: I’ve finished training my model. How can I make it available for others to use?](#q-i-ve-finished-training-my-model-how-can-i-make-it-available-for-others-to-use)
+  * [Q: I have a model previously trained in framework X but I need to use it in framework Y. Do I need to waste time retraining it in framework Y?](#q-i-have-a-model-previously-trained-in-framework-x-but-i-need-to-use-it-in-framework-y-do-i-need-to-waste-time-retraining-it-in-framework-y)
 - [Data](#data)
-  * [Q: Could I collect hundreds of images on a topic in a few minutes?](#q--could-i-collect-hundreds-of-images-on-a-topic-in-a-few-minutes-)
-  * [Q: Forget the browser. How do I scrape Google for images using the command line?](#q--forget-the-browser-how-do-i-scrape-google-for-images-using-the-command-line-)
-  * [Q: Those were not enough for collecting images. I need more control. What other tools can help me download data in more custom ways beyond the search engine?](#q--those-were-not-enough-for-collecting-images-i-need-more-control-what-other-tools-can-help-me-download-data-in-more-custom-ways-beyond-the-search-engine-)
-  * [Q: I have the images for the target classes, but now need images for the negative (not item/background) class. Any quick ways to build a big dataset of negative classes?](#q--i-have-the-images-for-the-target-classes--but-now-need-images-for-the-negative--not-item-background--class-any-quick-ways-to-build-a-big-dataset-of-negative-classes-)
-  * [Q: How can I search for a prebuilt dataset that suits my needs?](#q--how-can-i-search-for-a-prebuilt-dataset-that-suits-my-needs-)
-  * [Q: For datasets like ImageNet, downloading, figuring out the format, and then loading them for training takes far too much time. Is there an easy way to read popular datasets?](#q--for-datasets-like-imagenet--downloading--figuring-out-the-format--and-then-loading-them-for-training-takes-far-too-much-time-is-there-an-easy-way-to-read-popular-datasets-)
-  * [Q: Training on the millions of ImageNet images will take a long, long time. Is there a smaller representative dataset I could try training on, to quickly experiment and iterate with?](#q--training-on-the-millions-of-imagenet-images-will-take-a-long--long-time-is-there-a-smaller-representative-dataset-i-could-try-training-on--to-quickly-experiment-and-iterate-with-)
-  * [Q: What are the largest readily available datasets that I could use for training?](#q--what-are-the-largest-readily-available-datasets-that-i-could-use-for-training-)
-  * [Q: What are some of the readily available large video datasets I could use?](#q--what-are-some-of-the-readily-available-large-video-datasets-i-could-use-)
-  * [Q: Are those the largest labeled datasets ever assembled in the history of time?](#q--are-those-the-largest-labeled-datasets-ever-assembled-in-the-history-of-time-)
-  * [Q: How can I get help annotating data?](#q--how-can-i-get-help-annotating-data-)
-  * [Q: Is there a versioning tool for datasets, like Git is for code?](#q--is-there-a-versioning-tool-for-datasets--like-git-is-for-code-)
-  * [Q: What if I don’t have access to a large dataset for my unique problem?](#q--what-if-i-don-t-have-access-to-a-large-dataset-for-my-unique-problem-)
+  * [Q: Could I collect hundreds of images on a topic in a few minutes?](#q-could-i-collect-hundreds-of-images-on-a-topic-in-a-few-minutes)
+  * [Q: Forget the browser. How do I scrape Google for images using the command line?](#q-forget-the-browser-how-do-i-scrape-google-for-images-using-the-command-line)
+  * [Q: Those were not enough for collecting images. I need more control. What other tools can help me download data in more custom ways beyond the search engine?](#q-those-were-not-enough-for-collecting-images-i-need-more-control-what-other-tools-can-help-me-download-data-in-more-custom-ways-beyond-the-search-engine)
+  * [Q: I have the images for the target classes, but now need images for the negative (not item/background) class. Any quick ways to build a big dataset of negative classes?](#q-i-have-the-images-for-the-target-classes-but-now-need-images-for-the-negative-not-item-background-class-any-quick-ways-to-build-a-big-dataset-of-negative-classes)
+  * [Q: How can I search for a prebuilt dataset that suits my needs?](#q-how-can-i-search-for-a-prebuilt-dataset-that-suits-my-needs)
+  * [Q: For datasets like ImageNet, downloading, figuring out the format, and then loading them for training takes far too much time. Is there an easy way to read popular datasets?](#q-for-datasets-like-imagenet-downloading-figuring-out-the-format-and-then-loading-them-for-training-takes-far-too-much-time-is-there-an-easy-way-to-read-popular-datasets)
+  * [Q: Training on the millions of ImageNet images will take a long, long time. Is there a smaller representative dataset I could try training on, to quickly experiment and iterate with?](#q-training-on-the-millions-of-imagenet-images-will-take-a-long-long-time-is-there-a-smaller-representative-dataset-i-could-try-training-on-to-quickly-experiment-and-iterate-with)
+  * [Q: What are the largest readily available datasets that I could use for training?](#q-what-are-the-largest-readily-available-datasets-that-i-could-use-for-training)
+  * [Q: What are some of the readily available large video datasets I could use?](#q-what-are-some-of-the-readily-available-large-video-datasets-i-could-use)
+  * [Q: Are those the largest labeled datasets ever assembled in the history of time?](#q-are-those-the-largest-labeled-datasets-ever-assembled-in-the-history-of-time)
+  * [Q: How can I get help annotating data?](#q-how-can-i-get-help-annotating-data)
+  * [Q: Is there a versioning tool for datasets, like Git is for code?](#q-is-there-a-versioning-tool-for-datasets-like-git-is-for-code)
+  * [Q: What if I don’t have access to a large dataset for my unique problem?](#q-what-if-i-don-t-have-access-to-a-large-dataset-for-my-unique-problem)
 - [Privacy](#privacy)
-  * [Q: How do I develop a more privacy-preserving model without going down the cryptography rabbit hole?](#q--how-do-i-develop-a-more-privacy-preserving-model-without-going-down-the-cryptography-rabbit-hole-)
-  * [Q: Can I keep my model under wraps from prying eyes?](#q--can-i-keep-my-model-under-wraps-from-prying-eyes-)
+  * [Q: How do I develop a more privacy-preserving model without going down the cryptography rabbit hole?](#q-how-do-i-develop-a-more-privacy-preserving-model-without-going-down-the-cryptography-rabbit-hole)
+  * [Q: Can I keep my model under wraps from prying eyes?](#q-can-i-keep-my-model-under-wraps-from-prying-eyes)
 - [Education and Exploration](#education-and-exploration)
-  * [Q: I want to become an AI expert. Beyond this book, where should I invest my time to learn more?](#q--i-want-to-become-an-ai-expert-beyond-this-book--where-should-i-invest-my-time-to-learn-more-)
-  * [Q: Where can I find interesting notebooks to learn from?](#q--where-can-i-find-interesting-notebooks-to-learn-from-)
-  * [Q: Where can I learn about the state of the art for a specific topic?](#q--where-can-i-learn-about-the-state-of-the-art-for-a-specific-topic-)
-  * [Q: I am reading a paper on Arxiv and I really like it. Do I need to write code from scratch?](#q--i-am-reading-a-paper-on-arxiv-and-i-really-like-it-do-i-need-to-write-code-from-scratch-)
-  * [Q: I don’t want to write any code, but I still want to interactively experiment with a model using my camera. How can I do that?](#q--i-don-t-want-to-write-any-code--but-i-still-want-to-interactively-experiment-with-a-model-using-my-camera-how-can-i-do-that-)
-  * [Q: If I can test without code, can I train without code, too?](#q--if-i-can-test-without-code--can-i-train-without-code--too-)
+  * [Q: I want to become an AI expert. Beyond this book, where should I invest my time to learn more?](#q-i-want-to-become-an-ai-expert-beyond-this-book-where-should-i-invest-my-time-to-learn-more)
+  * [Q: Where can I find interesting notebooks to learn from?](#q-where-can-i-find-interesting-notebooks-to-learn-from)
+  * [Q: Where can I learn about the state of the art for a specific topic?](#q-where-can-i-learn-about-the-state-of-the-art-for-a-specific-topic)
+  * [Q: I am reading a paper on Arxiv and I really like it. Do I need to write code from scratch?](#q-i-am-reading-a-paper-on-arxiv-and-i-really-like-it-do-i-need-to-write-code-from-scratch)
+  * [Q: I don’t want to write any code, but I still want to interactively experiment with a model using my camera. How can I do that?](#q-i-don-t-want-to-write-any-code-but-i-still-want-to-interactively-experiment-with-a-model-using-my-camera-how-can-i-do-that)
+  * [Q: If I can test without code, can I train without code, too?](#q-if-i-can-test-without-code-can-i-train-without-code-too)
 - [One Last Question](#one-last-question)
-  * [Q: Tell me a great deep learning prank?](#q--tell-me-a-great-deep-learning-prank-)
+  * [Q: Tell me a great deep learning prank?](#q-tell-me-a-great-deep-learning-prank)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -210,6 +216,29 @@ Checkout the blog post from the TensorFlow team: https://www.tensorflow.org/guid
 
 **Cuda profiler**: This NVIDIA released profiling tool enables you to understand and optimize the performance of your CUDA, OpenACC or OpenMP applications. The Visual Profiler is a graphical profiling tool that displays a timeline of your application's CPU and GPU activity, and that includes an automated analysis engine to identify optimization opportunities. The nvprof profiling tool enables you to collect and view profiling data from the command-line: https://docs.nvidia.com/cuda/profiler-users-guide/index.html 
 
+## Distributed Training
+
+### Q: How can I make my Keras code 30x faster? Is there another magic one liner that I can use?
+
+Of Course there is! Using UC Berkeley's Ray as a distribution method under the hood while maintaining the same Keras API gives us an open-source framework called dKeras: https://github.com/dkeras-project/dkeras.
+
+There’s a fantastic article on Medium introducing dKeras that talks about the functionalities that it offers: https://medium.com/@offercstephen/dkeras-make-keras-faster-with-a-few-lines-of-code-a1792b12dfa0.
+
+### Q: What are some frameworks I can use to distribute training with minimal code changes?
+
+DeepSpeed from Microsoft is a deep learning optimization library that makes distributed training easy, efficient, and effective. It claims to enable training models with over a hundred billion parameters on the latest GPUs and achieves 10x system performance over SOTA: https://github.com/microsoft/DeepSpeed/blob/master/README.md
+
+## Production
+
+### Q: What are some open source libraries that ease deployment and monitoring of deployed models?
+
+There are a bunch of open source libraries that not only help in deployment but also enable scaling, automatic versioning, monitoring of deployed models and making sure that your model is kept hidden from prying eyes. You can find a detailed list here: https://github.com/EthicalML/awesome-production-machine-learning
+
+### Q: How can I stay updated on the best practices in deployment?
+
+The ML in Production newsletter publishes best practices for running ML systems in production: https://mlinproduction.com/
+
+One of the more latest open source platforms for model serving is BentoML. Check out this Reddit thread for a cost comparison between BentoML, TensorFlow Serving, Clipper and AWS SageMaker: https://www.reddit.com/r/deeplearning/comments/g1civx/bentoml_an_opensource_platform_for/
 
 ## Model
 
@@ -289,7 +318,7 @@ Try Imagenette. Built by Jeremy Howard from fast.ai, this 1.4 GB dataset contain
 
 
 |   **Name**    | **Details** | **Task** |
-| ----------- | ----------- | ------------ |
+|:-----------:|:-----------:|:------------:|
 | Tencent ML Images | <ul><li>17.7 million images with 11,000 category labels</li><li>8 tags per image (avg)</li><li>1447 images per category (avg)</li><li>Combines ImageNet & Open Images</li></ul> |Classification|
 | Open Images V4 (from Google) |  <ul><li>9 million images in 19.7K categories</li><li>1.74M images with 600 categories (bounding boxes)</li><li>8 objects per image (avg)</li><li>Randomly sampled from Flickr without a predefined list of tags, leading to natural class statistics. </li></ul>  |  <ul><li>Classification</li><li>Detection</li></ul> |
 | BDD100K (from UC Berkeley) | <ul><li>100K driving videos over 1100 hours</li><li>100K images with bounding boxes for 10 categories</li><li>100K images with lane markings</li><li>100K images with drivable area segmentation</li><li>10K images with pixel level instance segmentation</li></ul> |  <ul><li>Classification</li><li>Detection</li><li>Segmentation</li></ul> |
@@ -300,7 +329,7 @@ Try Imagenette. Built by Jeremy Howard from fast.ai, this 1.4 GB dataset contain
 ### Q: What are some of the readily available large video datasets I could use?
 
 |   **Name**   | **Details**|
-| ----------- | ----------- |
+|:-----------:|:-----------:|
 |   YouTube-8M    |  <ul><li>6.1 million videos</li><li>3,862 classes</li><li>2.6 billion audio-visual features</li><li>3.0 labels/video</li><li>1.53 Terabytes of randomly sampled videos</li></ul>     |
 |  Something Something (from Twenty Billion Neurons)   |     <ul><li>221,000 videos in 174 action classes</li><li>For example, “Pouring water into wine glass but missing so it spills next to it”</li><li>Humans performing predefined actions with everyday objects</li></ul> |
 |Jester (from Twenty Billion Neurons) | <ul><li>148,000 videos in 27 classes</li><li>For example, “Zooming in with two fingers”</li><li>Predefined hand gestures in front of a webcam</li></ul> |
@@ -328,7 +357,7 @@ Try to develop a synthetic dataset for training! For example, find a realistic 3
 
 ## Privacy
 
-### Q: How do I develop a more privacy-preserving model without going down the cryptography rabbit hole?
+### Q: How do I develop a more privacy preserving model without going down the cryptography rabbit hole?
 
 TensorFlow Encrypted might be the solution you’re looking for. It enables development using encrypted data, which is relevant, especially if you are on the cloud. Internally, lots of secure multiparty computation and homomorphic encryptions result in privacy-preserving machine learning.
 
@@ -349,9 +378,9 @@ careers, it contains hundreds of books, videos, live online trainings, and keyno
 
 Following are some resources that allow one to play with different training scenarios in the browser without the need to install any packages! It covers not only the theory but also helps to build the intuition to solve future problems. Take a look at the table below outlining a few video series, online books, and browser-based tools that will help further your understanding of the subject matter. 
 
-| Name | What is it?  | YouTube/Blog  |
+| Name | What is it?| YouTube/Blog|
 |:---:|:---:|:---:|
-| [Teachable Machine](https://end-to-end-machine-learning.teachable.com/p/how-deep-neural-networks-work) by [Brandon Rohrer](https://www.linkedin.com/in/brohrer/) | Series of lectures describing how CNNs, RNNs and LSTMs work.  | You can either register free-of-cost on the website, or view on [YouTube](https://www.youtube.com/watch?v=ILsA4nyG7I0&list=PLVZqlMpoM6kaJX_2lLKjEhWI0NlqHfqzp)  | 
+| [Teachable Machine](https://end-to-end-machine-learning.teachable.com/p/how-deep-neural-networks-work) by [Brandon Rohrer](https://www.linkedin.com/in/brohrer/) | Series of lectures describing how CNNs, RNNs and LSTMs work.| You can either register free-of-cost on the website, or view on [YouTube](https://www.youtube.com/watch?v=ILsA4nyG7I0&list=PLVZqlMpoM6kaJX_2lLKjEhWI0NlqHfqzp)  | 
 | [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by [Michael Nielsen](http://michaelnielsen.org/)  | A free online book on Neural networks that is grounded in principles of deep learning.  |   |
 | [TensorFlow Playground](https://playground.tensorflow.org/) by Google's Daniel Smilkov and Shan Carter  | An interactive browser-based tool that allows one to tinker with a neural network in the browser.  | [Blog](https://cloud.google.com/blog/products/gcp/understanding-neural-networks-with-tensorflow-playground)  |
 | [ConvNet PlayGround](https://convnetplayground.fastforwardlabs.com/#/) By Cloudera's Fast Forward Labs  |  An interactive browser-based tool that does semantic image search using convolutional neural networks | [Blog](https://towardsdatascience.com/convnetplayground-979d441ebf82)  |
