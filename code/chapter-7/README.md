@@ -277,13 +277,19 @@ Well, unless you are on the cloud, weights are visible and can be reverse engine
 
 ## Education and Exploration
 
+**Q: I want to become an AI expert. Beyond this book, where should I invest my time to learn more?**
 
-Even if you are a first-time learner of deep learning or a hobbiyst, you can develop foundational knowledge through these resources that allow one to play with different training scenarios in the browser without the need to install any packages! It covers not only the theory but also helps to build the intuition to solve future problems. 
+There are several resources on the internet to learn deep learning in depth. We highly recommend these video lectures from some of the best teachers, covering a variety of application areas from computer vision to natural language processing.
 
-Take a look at the table below outlining a few video series, online books, and browser-based tools that will help further your understanding of the subject matter. 
+- Fast.ai (by Jeremy Howard and Rachel Thomas) features a free 14-video lecture series, taking a more learn-by-doing approach in PyTorch. Along with the course comes an ecosystem of tools, active community which has led to many breakthroughs in the form of research papers and ready-to-use code (like three lines of code to train a state-of-the-art network using the fast.ai library).
+- Deeplearning.ai (by Andrew Ng) features a five-course “Deep Learning Specialization.” It’s free of cost (although you could pay a small fee to get a certificate) and will solidify your theoretical foundation further. Dr. Ng’s first Coursera course on machine learning has taught more than two million students, and this series continues the tradition of highly approachable content loved by beginners and experts alike. An online set of notes for this course have been developed by Chris Maxwell ([maxxiimo](https://github.com/maxxiimo)) and are available at: http://chrismaxwell.com/ai/Deep%20Learning%20Specialization.pdf. 
+- We would be remiss if we didn’t encourage you to note O’Reilly’s Online Learning platform in this list. Helping more than two million users advance their
+careers, it contains hundreds of books, videos, live online trainings, and keynotes given by leading thinkers and practitioners at O’Reilly’s AI and data conferences.
 
-| Name | What is it?  | YouTube/Blog  | 
-|---|---|---|
+Following are some resources that allow one to play with different training scenarios in the browser without the need to install any packages! It covers not only the theory but also helps to build the intuition to solve future problems. Take a look at the table below outlining a few video series, online books, and browser-based tools that will help further your understanding of the subject matter. 
+
+| Name | What is it?  | YouTube/Blog  |
+|:---:|:---:|:---:|
 | [Teachable Machine](https://end-to-end-machine-learning.teachable.com/p/how-deep-neural-networks-work) by [Brandon Rohrer](https://www.linkedin.com/in/brohrer/) | Series of lectures describing how CNNs, RNNs and LSTMs work.  | You can either register free-of-cost on the website, or view on [YouTube](https://www.youtube.com/watch?v=ILsA4nyG7I0&list=PLVZqlMpoM6kaJX_2lLKjEhWI0NlqHfqzp)  | 
 | [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by [Michael Nielsen](http://michaelnielsen.org/)  | A free online book on Neural networks that is grounded in principles of deep learning.  |   |
 | [TensorFlow Playground](https://playground.tensorflow.org/) by Google's Daniel Smilkov and Shan Carter  | An interactive browser-based tool that allows one to tinker with a neural network in the browser.  | [Blog](https://cloud.google.com/blog/products/gcp/understanding-neural-networks-with-tensorflow-playground)  |
@@ -293,14 +299,6 @@ Take a look at the table below outlining a few video series, online books, and b
 
 
 
-**Q: I want to become an AI expert. Beyond this book, where should I invest my time to learn more?**
-
-There are several resources on the internet to learn deep learning in depth. We highly recommend these video lectures from some of the best teachers, covering a variety of application areas from computer vision to natural language processing.
-
-- Fast.ai (by Jeremy Howard and Rachel Thomas) features a free 14-video lecture series, taking a more learn-by-doing approach in PyTorch. Along with the course comes an ecosystem of tools, active community which has led to many breakthroughs in the form of research papers and ready-to-use code (like three lines of code to train a state-of-the-art network using the fast.ai library).
-- Deeplearning.ai (by Andrew Ng) features a five-course “Deep Learning Specialization.” It’s free of cost (although you could pay a small fee to get a certificate) and will solidify your theoretical foundation further. Dr. Ng’s first Coursera course on machine learning has taught more than two million students, and this series continues the tradition of highly approachable content loved by beginners and experts alike. An online set of notes for this course have been developed by Chris Maxwell ([maxxiimo](https://github.com/maxxiimo)) and are available at: http://chrismaxwell.com/ai/Deep%20Learning%20Specialization.pdf. 
-- We would be remiss if we didn’t encourage you to note O’Reilly’s Online Learning platform in this list. Helping more than two million users advance their
-careers, it contains hundreds of books, videos, live online trainings, and keynotes given by leading thinkers and practitioners at O’Reilly’s AI and data conferences. 
 
 **Q: Where can I find interesting notebooks to learn from?**
 
