@@ -33,7 +33,7 @@ def get_img_array(img_path, size):
     array = np.expand_dims(array, axis=0)
     return array
 
-
+#This replaces several functions from visualization.py 
 def make_gradcam_heatmap(
     img_path, model, last_conv_layer_name, classifier_layer_names, output_path
 ):
