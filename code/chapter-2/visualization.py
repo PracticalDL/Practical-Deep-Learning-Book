@@ -19,7 +19,7 @@ import glob
 import os
 
 model = VGG16(weights='imagenet', include_top=True, input_tensor=None, input_shape=None, pooling=None, classes=1000)
-#Check with 'print(model.summary())'
+#Check with 'print(model.summary())', in this case it is "block5_conv3"
 last_conv_layer_name = "block5_conv3"
 #Include layers between last convolutional layer and prediction layer
 classifier_layer_names = ["block5_pool", "flatten", "fc1", "fc2", "predictions"]
