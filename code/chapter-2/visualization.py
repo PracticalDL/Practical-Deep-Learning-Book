@@ -107,7 +107,7 @@ def make_gradcam_heatmap(
     # Superimpose the heatmap on original image
     superimposed_img = jet_heatmap * 0.4 + img
     superimposed_img = tensorflow.keras.preprocessing.image.array_to_img(superimposed_img)
-    
+
     #Save the the superimposed image to the output path
     superimposed_img.save(output_path)
 
@@ -120,7 +120,7 @@ def process_video(videoframes_path, output_prefix):
     for input_path in sorted(glob.glob(videoframes_path + "/*.jpg")):
         counter += 1
         output_path = output_dir + "/result-" + str(counter).zfill(4) + '.jpg'
-        
+
         make_gradcam_heatmap(input_path, model, last_conv_layer_name, classifier_layer_names, output_path)
 
 def get_command_line_arguments():
@@ -138,12 +138,12 @@ if args.process_type == "image":
     image_path = args.path
     output_prefix = os.path.splitext(os.path.basename(image_path))[0]
     make_gradcam_heatmap(image_path, model, last_conv_layer_name, classifier_layer_names, output_prefix + "_output.jpg")
-    
+
     #Plot the superimposed image
     img = mpimg.imread(output_prefix + "_output.jpg")
     plt.imshow(img)
     plt.show()
-    
+
 elif args.process_type == "video":
     videoframes_path = args.path
     output_prefix = os.path.dirname(videoframes_path)
