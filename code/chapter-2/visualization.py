@@ -132,7 +132,7 @@ def process_video(videoframes_path, output_prefix):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     for input_path in sorted(glob.glob(videoframes_path + "/*.jpg")):
-        counter +=
+        counter += 1
 
         output_path = output_dir + "/result-" + str(counter).zfill(4) + '.jpg'
 
