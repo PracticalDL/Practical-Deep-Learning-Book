@@ -18,18 +18,28 @@ from argparse import ArgumentParser
 import glob
 import os
 
-#Select a model to use, in this case VGG16
-model = VGG16(weights='imagenet', include_top=True, input_tensor=None, input_shape=None, pooling=None, classes=1000)
-#Check with 'print(model.summary())', in this case it is "block5_conv3"
+# Select a model to use, in this case VGG16
+model = VGG16(
+    weights="imagenet",
+    include_top=True,
+    input_tensor=None,
+    input_shape=None,
+    pooling=None,
+    classes=1000,
+)
+# Check with 'print(model.summary())', in this case it is "block5_conv3"
 last_conv_layer_name = "block5_conv3"
-#Must include layers between last convolutional layer and prediction layer
-#Layer names can be found through 'print(model.summary())'
+# Must include layers between last convolutional layer and prediction layer
+# Layer names can be found through 'print(model.summary())'
 classifier_layer_names = ["block5_pool", "flatten", "fc1", "fc2", "predictions"]
 
-#This function is called from 'make_gradcam_heatmap'
-#Takes iaage_path from 'get_command_line_arguments', turns into it an array
+
+# This function is called from 'make_gradcam_heatmap'
+# Takes iaage_path from 'get_command_line_arguments', turns into it an array
 def get_img_array(img_path, size):
-    img = tensorflow.keras.preprocessing.image.load_img(img_path, target_size=(224, 224))
+    img = tensorflow.keras.preprocessing.image.load_img(
+        img_path, target_size=(224, 224)
+    )
     # `array` is a float32 Numpy array
     array = tensorflow.keras.preprocessing.image.img_to_array(img)
     # We add a dimension to transform our array into a "batch"
@@ -37,16 +47,18 @@ def get_img_array(img_path, size):
     array = np.expand_dims(array, axis=0)
     return array
 
-#'make_gradcam_heatmap' is main function and ultimately returns heatmap superimposed onto the input image(s)
 
-#inputs are the image path specified in the command line, the last convolutional layer and
-#the classifier layer names of which both are defined above and depend on your model, and the output path
-#for our heatmap superimposed onto original image which are specified in the script's final if statement
+# 'make_gradcam_heatmap' is main function and ultimately returns heatmap superimposed onto the input image(s)
+
+
+# inputs are the image path specified in the command line, the last convolutional layer and
+# the classifier layer names of which both are defined above and depend on your model, and the output path
+# for our heatmap superimposed onto original image which are specified in the script's final if statement
 def make_gradcam_heatmap(
     img_path, model, last_conv_layer_name, classifier_layer_names, output_path
 ):
-    #pre_processes the array returned from 'get_img_array'
-    img_array = preprocess_input(get_img_array(img_path, size= (224, 224)))
+    # pre_processes the array returned from 'get_img_array'
+    img_array = preprocess_input(get_img_array(img_path, size=(224, 224)))
 
     # First, we create a model that maps the input image to the activations
     # of the last conv layer
@@ -64,7 +76,6 @@ def make_gradcam_heatmap(
     # Then, we compute the gradient of the top predicted class for our input image
     # with respect to the activations of the last conv layer
     with tensorflow.GradientTape() as tape:
-
         # Compute activations of the last conv layer and make the tape watch it
         last_conv_layer_output = last_conv_layer_model(img_array)
         tape.watch(last_conv_layer_output)
@@ -117,60 +128,83 @@ def make_gradcam_heatmap(
 
     # Superimpose the heatmap on original image
     superimposed_img = jet_heatmap * 0.4 + img
-    superimposed_img = tensorflow.keras.preprocessing.image.array_to_img(superimposed_img)
+    superimposed_img = tensorflow.keras.preprocessing.image.array_to_img(
+        superimposed_img
+    )
 
-    #Save the the superimposed image to the output path
+    # Save the the superimposed image to the output path
     superimposed_img.save(output_path)
+    print("SAVED")
 
-#Runs body of code for entirety of videoframs_path (folder specified in command line)
+
+# Runs body of code for entirety of videoframs_path (folder specified in command line)
 def process_video(videoframes_path, output_prefix):
     counter = 0
-    #define output directory
+    # define output directory
     output_dir = output_prefix + "_output"
 
-    #Creates directory output directoy if it doesn't already exist
+    # Creates directory output directoy if it doesn't already exist
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     for input_path in sorted(glob.glob(videoframes_path + "/*.jpg")):
         counter += 1
 
-        output_path = output_dir + "/result-" + str(counter).zfill(4) + '.jpg'
+        output_path = output_dir + "/result-" + str(counter).zfill(4) + ".jpg"
+        print(output_path)
 
-        #Runs main function with specified image_path, output_prefix, and layers defined near top of script
-        make_gradcam_heatmap(input_path, model, last_conv_layer_name, classifier_layer_names, output_path)
+        # Runs main function with specified image_path, output_prefix, and layers defined near top of script
+        make_gradcam_heatmap(
+            input_path, model, last_conv_layer_name, classifier_layer_names, output_path
+        )
 
-#Function for taking inputs through the command line
+
+# Function for taking inputs through the command line
 def get_command_line_arguments():
     parser = ArgumentParser()
-    #We specify either image or video to
-    parser.add_argument("--process", choices=["image", "video"], required=True,
-                        dest="process_type", help="Process a single image or video")
-    parser.add_argument("--path", required=True, dest="path",
-                        help="Path of image or directory containing video frames")
+    # We specify either image or video to
+    parser.add_argument(
+        "--process",
+        choices=["image", "video"],
+        required=True,
+        dest="process_type",
+        help="Process a single image or video",
+    )
+    parser.add_argument(
+        "--path",
+        required=True,
+        dest="path",
+        help="Path of image or directory containing video frames",
+    )
     return parser.parse_args()
 
 
 args = get_command_line_arguments()
 
-#If process is specified as 'image', defines image_path and output_prefix according to command line argument
+# If process is specified as 'image', defines image_path and output_prefix according to command line argument
 if args.process_type == "image":
-    #image path is location of image that we want to generate a heatmap for
+    # image path is location of image that we want to generate a heatmap for
     image_path = args.path
     output_prefix = os.path.splitext(os.path.basename(image_path))[0]
-    #Runs main function with specified image_path and output_prefix from command line
-    #layers defined near top of script
-    make_gradcam_heatmap(image_path, model, last_conv_layer_name, classifier_layer_names, output_prefix + "_output.jpg")
+    # Runs main function with specified image_path and output_prefix from command line
+    # layers defined near top of script
+    make_gradcam_heatmap(
+        image_path,
+        model,
+        last_conv_layer_name,
+        classifier_layer_names,
+        output_prefix + "_output.jpg",
+    )
 
-    #Plot the superimposed image
+    # Plot the superimposed image
     img = mpimg.imread(output_prefix + "_output.jpg")
     plt.imshow(img)
     plt.show()
 
-#If process is specified as 'image', defines videoframes_path and output_prefix according to command line argument
+# If process is specified as 'image', defines videoframes_path and output_prefix according to command line argument
 elif args.process_type == "video":
-    #videoframes_path is directory with the video frames split by ffmpeg
+    # videoframes_path is directory with the video frames split by ffmpeg
     videoframes_path = args.path
-    #will be used to specify or create output folder
+    # will be used to specify or create output folder
     output_prefix = os.path.dirname(videoframes_path)
-    #Runs 'process_video' function with inputs taken from command line
+    # Runs 'process_video' function with inputs taken from command line
     heatmaps = process_video(videoframes_path, output_prefix)
