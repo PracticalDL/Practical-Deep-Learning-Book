@@ -3,6 +3,7 @@ from PIL import Image
 import json
 import argparse
 
+
 def resize_image(img):
     max_dimension = 256
     width, height = img.size
@@ -13,9 +14,9 @@ def resize_image(img):
     resize_proportion = 1
     if width > height:
         resize_proportion = width / max_dimension
-    else: 
+    else:
         resize_proportion = height / max_dimension
-    
+
     width = int(round(width / resize_proportion))
     height = int(round(height / resize_proportion))
 
@@ -23,10 +24,20 @@ def resize_image(img):
 
     return resized_image
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Convert a single image into a JSON request.')
-    parser.add_argument('--input', help='Name of input image file', dest="input_filename", required=True)
-    parser.add_argument('--output', help='Name of output JSON file', dest="output_filename", required=True)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Convert a single image into a JSON request."
+    )
+    parser.add_argument(
+        "--input", help="Name of input image file", dest="input_filename", required=True
+    )
+    parser.add_argument(
+        "--output",
+        help="Name of output JSON file",
+        dest="output_filename",
+        required=True,
+    )
 
     args = parser.parse_args()
 
@@ -35,7 +46,7 @@ if __name__ == '__main__':
     img = resize_image(img)
     data = np.asarray(img)
 
-    json_obj = json.dumps({ "image": data.tolist() })
+    json_obj = json.dumps({"image": data.tolist()})
 
     f = open(args.output_filename, "w")
     f.write(json_obj)
