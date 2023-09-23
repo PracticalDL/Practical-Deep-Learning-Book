@@ -7,6 +7,8 @@ Like Google Reverse Image Search, we explore how one can use embeddings — a co
 Run the following command prior to running the scripts in this directory:
 
 `$ pip install annoy -U`
+`$ pip install nmslib -U`
+`$ pip install falconn -U`
 
 ## Code
 
@@ -23,4 +25,4 @@ In this portion of the chapter, we will find the least accurate (worst) performi
 
 ## Data
 
-We will be using the Caltech101 dataset. Please download the [Caltech101](http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz) dataset and place it in a `caltech101` directory.
+We will be using the [Caltech101](http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz) dataset. The commands for downloading the dataset can be found in the notebooks.

@@ -15,7 +15,7 @@ Go through the code in the following order:
 
 ## Data
 
-Download the `Cats and Dogs` dataset from [Kaggle](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/download/train.zip) and place it in the `data` directory. You may have to create an account on Kaggle in order to download the data.
+The `Cats and Dogs` dataset from [Kaggle](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/download/train.zip) can be downloaded from the notebook using the kaggle CLI. 
 
 ## Further Reading
 
